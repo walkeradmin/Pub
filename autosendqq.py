@@ -206,5 +206,4 @@ his_rows = cursor.fetchall()
 if __name__ == '__main__':
     print('Sql query time :', start_time())
     sched_time = datetime.datetime.now()
-    # print('Run the timer task at {0}'.format(sched_time))
     timer_fun(sched_time)
