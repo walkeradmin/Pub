@@ -123,6 +123,7 @@ def query():
     while True:
         global flag1
         if flag1 == 0:
+            # For example ：
             print('河南卡单:' + '\n')
             for i in range(len(rows)):
                 tuple1 = rows[i]
