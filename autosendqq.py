@@ -73,6 +73,9 @@ def start_time():
         # Add a weekend start, judge the push time module, this module will not be called normally.
     elif week == 'Saturday':
         print('Rest on Saturday, the next push time will be held at 8:00 am next Monday.')
+        clock = datetime.datetime.strptime(time.strftime("%Y-%m-%d 08:00:00"),
+                                           "%Y-%m-%d %H:%M:%S") - datetime.timedelta(
+            days=5)
         time1 = time.strftime("%Y-%m-%d %H:%M:%S")
         date1 = time.strftime("%Y-%m-%d 08:00:00")
         # print(date1)
@@ -82,6 +85,9 @@ def start_time():
         timer_fun(datetime.datetime.now())
     elif week == 'Sunday':
         print('Rest on Sunday, the next push time will be held at 8:00 am next Monday.')
+        clock = datetime.datetime.strptime(time.strftime("%Y-%m-%d 08:00:00"),
+                                           "%Y-%m-%d %H:%M:%S") - datetime.timedelta(
+            days=6)
         time11 = time.strftime("%Y-%m-%d %H:%M:%S")
         date11 = time.strftime("%Y-%m-%d 08:00:00")
         time22 = datetime.datetime.strptime(date11, "%Y-%m-%d %H:%M:%S") + datetime.timedelta(days=1)
@@ -165,40 +171,10 @@ def query():
                     break
 
 
-def timer():
-    global clock1
-    if time.strftime("%A") == 'Sunday':
-        clock1 = datetime.datetime.strptime(time.strftime("%Y-%m-%d 08:00:00"),
-                                            "%Y-%m-%d %H:%M:%S") - datetime.timedelta(
-            days=6)
-    elif time.strftime("%A") == 'Saturday':
-        clock1 = datetime.datetime.strptime(time.strftime("%Y-%m-%d 08:00:00"),
-                                            "%Y-%m-%d %H:%M:%S") - datetime.timedelta(
-            days=5)
-    elif time.strftime("%A") == 'Friday':
-        clock1 = datetime.datetime.strptime(time.strftime("%Y-%m-%d 08:00:00"),
-                                            "%Y-%m-%d %H:%M:%S") - datetime.timedelta(
-            days=4)
-    elif time.strftime("%A") == 'Thursday':
-        clock1 = datetime.datetime.strptime(time.strftime("%Y-%m-%d 08:00:00"),
-                                            "%Y-%m-%d %H:%M:%S") - datetime.timedelta(
-            days=3)
-    elif time.strftime("%A") == 'Wednesday':
-        clock1 = datetime.datetime.strptime(time.strftime("%Y-%m-%d 08:00:00"),
-                                            "%Y-%m-%d %H:%M:%S") - datetime.timedelta(
-            days=2)
-    elif time.strftime("%A") == 'Tuesday':
-        clock1 = datetime.datetime.strptime(time.strftime("%Y-%m-%d 08:00:00"),
-                                            "%Y-%m-%d %H:%M:%S") - datetime.timedelta(
-            days=1)
-    elif time.strftime("%A") == 'Monday':
-        clock1 = datetime.datetime.strptime(time.strftime("%Y-%m-%d 08:00:00"), "%Y-%m-%d %H:%M:%S")
-    return clock1
-
-
 flag1, ia = 0, 0
 conn = cx_Oracle.connect('user/password@IP/实例')
 cursor = conn.cursor()
+# start_time
 sql = ""
 cursor.execute(sql)
 his_rows = cursor.fetchall()
