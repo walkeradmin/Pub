@@ -146,9 +146,7 @@ def query():
             flag1 = 1
         else:
             print('Latest data volume：', len(rows), '\n')
-            # print('')
             print('Number of historical data：', len(his_rows), '\n')
-            # print(rows)
             # Message txt
             # f = open('log.txt', 'w+', encoding='utf-8')
             # f.write(str(his_rows))
