@@ -195,8 +195,8 @@ def query():
                     break
 
 
-conn = cx_Oracle.connect(user+'/'+passWd+'@'+ip+'/'+name)
-cursor = conn.cursor()
+connect = cx_Oracle.connect(user+'/'+passWd+'@'+ip+'/'+name)
+cursor = connect.cursor()
 sql = ""
 cursor.execute(sql)
 his_rows = cursor.fetchall()
