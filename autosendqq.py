@@ -3,7 +3,6 @@
 # first： 2019-06-06
 # second：2019-06-28
 
-
 import cx_Oracle
 import win32gui
 from win32.lib import win32con
