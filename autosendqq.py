@@ -1,6 +1,8 @@
 # -*- coding:utf-8 -*-
-# author:walker
-# 2019-06-06
+# author: walker
+# first： 2019-06-06
+# second：2019-06-28
+
 
 import cx_Oracle
 import win32gui
@@ -9,6 +11,14 @@ import win32clipboard as w
 import time
 import datetime
 import pprint
+import shelve
+
+flag1, ia = 0, 0
+shelFile = shelve.open('gywl')
+user = shelFile['devOps']['user']
+passWd = shelFile['devOps']['passwd']
+ip = shelFile['devOps']['ip']
+name = shelFile['devOps']['name']
 
 
 def timer_fun(sched_time):
@@ -24,7 +34,7 @@ def timer_fun(sched_time):
                 print('Start query for the' + ' ' + str(ii) + ' ' + 'time')
                 print('')
                 query()
-                time.sleep(1)
+                # time.sleep(1)
                 flag = 1
             else:
                 print('Current Time:', time.strftime("%H:%M:%S"), '\n',
@@ -38,7 +48,7 @@ def timer_fun(sched_time):
                         break
         else:
             if flag == 1:
-                sched_time = sched_time + datetime.timedelta(minutes=1)
+                sched_time = sched_time + datetime.timedelta(minutes=3)
                 flag = 0
 
 
@@ -67,7 +77,7 @@ def start_time():
         clock = time_format + ' ' + '00:00:01'
     elif week == 'Friday':
         now_time = datetime.datetime.now()
-        change_time = now_time + datetime.timedelta(days=c)
+        change_time = now_time + datetime.timedelta(days=d)
         time_format = change_time.strftime('%Y-%m-%d')
         clock = time_format + ' ' + '00:00:01'
         # Add a weekend start, judge the push time module, this module will not be called normally.
@@ -97,14 +107,14 @@ def start_time():
     return clock
 
 
-def sendqq(result, name):
+def send_qq(result, name):
     # message format
     num = "".join(result[:1])
     cause = "".join(result[1:2])
     or_id = "".join(result[2:3])
     owner = "".join(result[3:4])
     depot = "".join(result[4:5])
-    or_ty = "".join(result[5:])
+    or_ty = "".join(result[5:6])
     send_mess = '赛飞订单拦截第' + num + '条：' + '''
 卡单原因：''' + cause + '''
 订单组号：''' + or_id + '''
@@ -116,6 +126,8 @@ def sendqq(result, name):
     w.EmptyClipboard()
     w.SetClipboardData(win32con.CF_UNICODETEXT, send_mess)
     w.CloseClipboard()
+    # time wait pywintypes.error: (1418, 'GetClipboardData',线程没有打开的剪贴板)
+    time.sleep(1)
     handle = win32gui.FindWindow(None, name)
     if 1 == 1:
         win32gui.SendMessage(handle, 770, 0, 0)
@@ -123,33 +135,48 @@ def sendqq(result, name):
 
 
 def query():
-    a, a1, b, c, d, di, e, f, g, h, j, k, li, m, n = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+    a, a1, b, c, d, di, e, fn, g, h, j, k, li, m, n, ed, ex, eh, ej, ez, ef, ez1, eb, et, em, ec = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+    ehn, yk, ewz, esd, e_lrt, etj, eln, ejf, ejn, exn, eyg, ety, eyn, eyt, ehd = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
     sql1 = ""
     cursor.execute(sql1)
     rows = cursor.fetchall()
     while True:
         global flag1
         if flag1 == 0:
-            # For example ：
+            # For example
             print('河南卡单:' + '\n')
             for i in range(len(rows)):
                 tuple1 = rows[i]
-                if '河南' in tuple1[3] and '葵花' not in tuple1[2]:
+                if '河南' in tuple1[3] and '葵花' not in tuple1[2] and '入库' not in tuple1[5]:
                     a += 1
                     hn = list(tuple1)
                     hn.insert(0, (str(a)))
                     result = tuple(hn)
                     print(result)
-                    sendqq(result, 'group-name')
+                    # sendqq(result, 'test1')
+                    send_qq(result, '河南TMS-SAVE-WMS运维')
             print('')
-            time.sleep(1)
+            # time.sleep(1)
+            print('葵花卡单:' + '\n')
+            for i in range(len(rows)):
+                tuple1 = rows[i]
+                if '葵花' in tuple1[2] and '入库' not in tuple1[5]:
+                    a1 += 1
+                    kh = list(tuple1)
+                    kh.insert(0, (str(a1)))
+                    result = tuple(kh)
+                    print(result)
+                    # sendqq(result, '芯')
+                    send_qq(result, '葵花接口')
+            print('')
+            # time.sleep(1)
             flag1 = 1
         else:
             print('Latest data volume：', len(rows), '\n')
             print('Number of historical data：', len(his_rows), '\n')
-            # Message txt
-            # f = open('log.txt', 'w+', encoding='utf-8')
-            # f.write(str(his_rows))
+            f = open('log.txt', 'w+', encoding='utf-8')
+            f.write(str(his_rows))
+            f.close()
             check = list(set(tuple(rows)).difference(set(tuple(his_rows))))
             if check:
                 his_rows.extend(check)
@@ -169,13 +196,12 @@ def query():
                     break
 
 
-flag1, ia = 0, 0
-conn = cx_Oracle.connect('user/password@IP/实例')
+conn = cx_Oracle.connect(user+'/'+passWd+'@'+ip+'/'+name)
 cursor = conn.cursor()
-# start_time
 sql = ""
 cursor.execute(sql)
 his_rows = cursor.fetchall()
+
 
 if __name__ == '__main__':
     print('Sql query time :', start_time())
