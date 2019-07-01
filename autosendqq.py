@@ -33,7 +33,7 @@ def timer_fun(sched_time):
                 print('Start query for the' + ' ' + str(ii) + ' ' + 'time')
                 print('')
                 query()
-                # time.sleep(1)
+                time.sleep(1)
                 flag = 1
             else:
                 print('Current Time:', time.strftime("%H:%M:%S"), '\n',
