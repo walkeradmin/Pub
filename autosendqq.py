@@ -6,7 +6,7 @@
 import cx_Oracle
 import win32gui
 from win32.lib import win32con
-import win32clipboard as w
+import win32clipboard as win
 import time
 import datetime
 import pprint
@@ -121,10 +121,10 @@ def send_qq(result, name):
 仓库名称：''' + depot + '''
 单据类型：''' + or_ty + '''
 '''
-    w.OpenClipboard()
-    w.EmptyClipboard()
-    w.SetClipboardData(win32con.CF_UNICODETEXT, send_mess)
-    w.CloseClipboard()
+    win.OpenClipboard()
+    win.EmptyClipboard()
+    win.SetClipboardData(win32con.CF_UNICODETEXT, send_mess)
+    win.CloseClipboard()
     # time wait pywintypes.error: (1418, 'GetClipboardData',线程没有打开的剪贴板)
     time.sleep(1)
     handle = win32gui.FindWindow(None, name)
