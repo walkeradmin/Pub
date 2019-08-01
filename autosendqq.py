@@ -206,3 +206,4 @@ if __name__ == '__main__':
     print('Sql query time :', start_time())
     sched_time = datetime.datetime.now()
     timer_fun(sched_time)
+# This is a github merge test
