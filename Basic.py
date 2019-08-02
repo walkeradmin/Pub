@@ -10,6 +10,7 @@
 # aa=aa+2
 # print(aa)
 
+
 """
 # 二
 # 函数、数据类型
@@ -32,6 +33,7 @@
 
 # print(len('abc'))
 
+
 """
 # 三
 # 控制语句、(运算符)
@@ -50,6 +52,8 @@
 # name = 'walker'
 # password = 'abc123'
 
+
+"""while"""
 # while True:
 #     print('Please input name')
 #     name = input()
@@ -67,6 +71,7 @@
 #         print('Wrong name:',name)
 
 
+"""elif"""
 # elif
 # name = 'Dracula'
 # age = 4000
@@ -80,22 +85,6 @@
 #     print('Unlike you, Alice is not an undead, immortal vampire.')
 
 
-# while
-# i = 0
-# while i < 3:
-#     print('Input your name!')
-#     name = input()
-#     if name == 'walker':
-#         print('Hello walker!')
-#         print('Input your password')
-#         password = input()
-#         if password == 'abc':
-#             print('Hi! walker,long time no see')
-#             break
-#     else:
-#         print('Sorry!,wrong name',2-i,'choice')
-#     i = i+1
-
 
 """无限循环 ERROR"""
 # name = ''
@@ -103,6 +92,8 @@
 #     print('Please input your name!')
 #     name = input()
 # print('Thank you')
+
+
 
 """break"""
 # while True:
@@ -119,6 +110,7 @@
 #     print('Input your age')
 #     age = input()
 # print('Thank you!')
+
 
 
 """continue、break"""
@@ -145,6 +137,7 @@
 # print('Done')
 
 
+
 """for"""
 # print('My name is')
 # for i in range(5):
@@ -164,6 +157,7 @@
 # print(toal)
 
 
+
 """random"""
 # import random
 # for i in range(5):
@@ -173,6 +167,7 @@
 # from random import *
 # for i in range(5):
 #     print(randint(1, 10))
+
 
 
 """sys"""
@@ -196,6 +191,9 @@
 #         break
 #     print('letter:',letter)
 
+
+
+"""random"""
 # import random
 #
 # a = []
@@ -206,6 +204,8 @@
 #     # print(js)
 #
 #     print(a)
+
+
 
 """
 function def
@@ -306,6 +306,8 @@ function def
 # c = ['d']
 # c.extend()
 
+
+
 """
 a is different of b
 """
@@ -376,6 +378,7 @@ time
 # print('开始时间: %s'% Maketime())
 
 
+
 """datetime"""
 # import datetime
 #
@@ -396,7 +399,6 @@ time
 #     date11 = time.strftime("%Y-%m-%d 08:00:00")
 #     time22 = datetime.datetime.strptime(date11,"%Y-%m-%d %H:%M:%S") + datetime.timedelta(days=1)
 #     sleeptime = int((time22 - datetime.datetime.strptime(time11,"%Y-%m-%d %H:%M:%S")).total_seconds())
-
 
 
 
@@ -443,6 +445,7 @@ time
 # print(dic)
 
 
+
 """pprint"""
 # import pprint
 # a ={'沈阳': {'2019-05-30': ['11190530000310','1','3','4','5','6']}, '河南': {'2019-05-30': ['0006655205','1','3']}}
@@ -480,6 +483,7 @@ time
 # print(old)
 # f = open('first.txt', 'w+', encoding='utf-8')
 # f.write(str(old))
+
 
 
 """
@@ -522,17 +526,6 @@ time
 
 # str2 = 'print("你好")'
 # eval(str2)
-
-
-"""re"""
-# import re
-#
-# new = 'phonenumber is +86-13211472564'
-#
-# regex1 = re.compile(r'\d\d-\d\d\d\d\d\d\d\d\d\d\d')
-# mo = regex1.search(new)
-# print('my phone number is：', mo.group())
-
 
 
 
