@@ -40,3 +40,10 @@ README
 >>*2、DevopsConf可配置巡检时间。*  
 
 >>*3、以上两步执行过后，执行dist文件夹下的inspectionThread.exe即可。*   
+
+
+## Display  
+|#|AUTOTHREAD|DISPLAY|
+|---|---|----
+|1|`~`|![baidu]()
+|2|`LOGGER`|!(https://github.com/walkeradmin/Pub/tree/master/Dispic/query_sendqq_log.png)
