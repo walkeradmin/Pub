@@ -6,7 +6,7 @@ README
 |---|---
 |E-mail|402264457@qq.com
 
-****
+
 
 |SCRIPT|DESCRIPTION|
 |----|-----|
@@ -15,7 +15,7 @@ README
 |`inspectionThread.py`|___Automated inspection and generation of excel documents to send OA system___|  
 
 
-*****
+
 ## dist folder
 
 |环境|配置|
