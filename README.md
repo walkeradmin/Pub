@@ -45,5 +45,4 @@ README
 ## Display  
 |#|AUTOTHREAD|DISPLAY|
 |---|---|----
-|1|`~`|![baidu]()
-|2|`LOGGER`|![](https://github.com/walkeradmin/Pub/tree/master/Dispic/query_sendqq_log.png "LOG")
+|1|`LOGGER`|![](https://github.com/walkeradmin/Pub/tree/master/Dispic/query_sendqq_log.png)
