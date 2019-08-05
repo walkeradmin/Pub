@@ -46,4 +46,4 @@ README
 |#|AUTOTHREAD|DISPLAY|
 |---|---|----
 |1|`LOGGER`|![](https://github.com/walkeradmin/Pub/tree/master/Dispic/query_sendqq_log_1.png)
-|2|`~`|<img width="150" height="150" src="https://github.com/walkeradmin/Pub/tree/master/Dispic/query_sendqq_log_1.png"/>
+|2|`~`|![](https://github.com/walkeradmin/Pub/tree/master/Dispic/query_sendqq_log_2.png)
