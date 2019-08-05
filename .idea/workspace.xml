@@ -1,7 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="08980bf8-b570-4e3a-ba8e-233837640c00" name="Default Changelist" comment="" />
+    <list default="true" id="08980bf8-b570-4e3a-ba8e-233837640c00" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/autoThread.spec" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/autoThread/Analysis-00.toc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/autoThread/COLLECT-00.toc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/autoThread/EXE-00.toc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/autoThread/PKG-00.pkg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/autoThread/PKG-00.toc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/autoThread/PYZ-00.pyz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/autoThread/PYZ-00.toc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/autoThread/autoThread.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/autoThread/autoThread.exe.manifest" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/autoThread/base_library.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/autoThread/warn-autoThread.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/autoThread/xref-autoThread.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/inspectionthread/Analysis-00.toc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/inspectionthread/COLLECT-00.toc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/inspectionthread/EXE-00.toc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/inspectionthread/PKG-00.pkg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/inspectionthread/PKG-00.toc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/inspectionthread/PYZ-00.pyz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/inspectionthread/PYZ-00.toc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/inspectionthread/Tree-00.toc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/inspectionthread/Tree-01.toc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/inspectionthread/base_library.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/inspectionthread/inspectionthread.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/inspectionthread/inspectionthread.exe.manifest" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/inspectionthread/warn-inspectionthread.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/inspectionthread/xref-inspectionthread.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/autoThread/Include/pyconfig.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/autoThread/VCRUNTIME140.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/autoThread/_bz2.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/autoThread/_ctypes.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/autoThread/_decimal.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/autoThread/_hashlib.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/autoThread/_lzma.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/autoThread/_queue.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/autoThread/_socket.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/autoThread/_ssl.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/autoThread/_win32sysloader.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/autoThread/autoThread.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/autoThread/autoThread.exe.manifest" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/autoThread/base_library.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/autoThread/certifi/cacert.pem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/autoThread/cx_Oracle.cp37-win_amd64.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/autoThread/libcrypto-1_1.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/autoThread/libssl-1_1.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/autoThread/pyexpat.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/autoThread/python37.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/autoThread/pythoncom37.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/autoThread/pywintypes37.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/autoThread/select.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/autoThread/unicodedata.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/autoThread/win32api.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/autoThread/win32clipboard.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/autoThread/win32evtlog.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/autoThread/win32gui.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/inspectionthread/Include/pyconfig.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/inspectionthread/PIL/_imaging.cp37-win_amd64.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/inspectionthread/PIL/_imagingtk.cp37-win_amd64.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/inspectionthread/PIL/_webp.cp37-win_amd64.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/inspectionthread/VCRUNTIME140.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/inspectionthread/_bz2.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/inspectionthread/_ctypes.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/inspectionthread/_decimal.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/inspectionthread/_elementtree.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/inspectionthread/_hashlib.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/inspectionthread/_lzma.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/inspectionthread/_queue.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/inspectionthread/_socket.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/inspectionthread/_ssl.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/inspectionthread/base_library.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/inspectionthread/certifi/cacert.pem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/inspectionthread/chromedriver.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/inspectionthread/inspectionthread.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/inspectionthread/inspectionthread.exe.manifest" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/inspectionthread/libcrypto-1_1.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/inspectionthread/libssl-1_1.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/inspectionthread/pyexpat.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/inspectionthread/python37.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/inspectionthread/pywintypes37.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/inspectionthread/select.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/inspectionthread/selenium/webdriver/firefox/amd64/x_ignore_nofocus.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/inspectionthread/selenium/webdriver/firefox/webdriver.xpi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/inspectionthread/selenium/webdriver/firefox/webdriver_prefs.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/inspectionthread/selenium/webdriver/firefox/x86/x_ignore_nofocus.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/inspectionthread/selenium/webdriver/remote/getAttribute.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/inspectionthread/selenium/webdriver/remote/isDisplayed.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/inspectionthread/unicodedata.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/inspectionthread/win32api.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/inspectionthread/win32evtlog.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/inspectionthread/win32wnet.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inspectionthread.spec" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logformat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -9,11 +104,20 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Basic.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="489">
+              <caret line="934" selection-start-line="934" selection-end-line="934" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -35,6 +139,7 @@
       <list>
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/autosendqq.py" />
+        <option value="$PROJECT_DIR$/Basic.py" />
       </list>
     </option>
   </component>
@@ -48,7 +153,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-12" />
     <option name="y" value="-12" />
     <option name="width" value="2800" />
@@ -59,6 +164,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -70,16 +177,18 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -104,6 +213,8 @@
       <option name="presentableId" value="Default" />
       <updated>1564625822884</updated>
       <workItem from="1564625824181" duration="1337000" />
+      <workItem from="1564727709504" duration="2175000" />
+      <workItem from="1564975248569" duration="248000" />
     </task>
     <task id="LOCAL-00001" summary="first test commit">
       <created>1564625948456</created>
@@ -119,27 +230,29 @@
       <option name="project" value="LOCAL" />
       <updated>1564626579019</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="second commit">
+      <created>1564728380024</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1564728380024</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1337000" />
+    <option name="totallyTimeSpent" value="3760000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1513" height="973" extended-state="6" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24948454" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14570446" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -147,16 +260,21 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="SciView" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Maven" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="SciView" order="8" />
+      <window_info anchor="right" id="Database" order="9" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,12 +283,11 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first test commit" />
     <MESSAGE value="test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <MESSAGE value="second commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="second commit" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py" />
     <entry file="file://$PROJECT_DIR$/autosendqq.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="576">
@@ -178,5 +295,84 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Basic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="489">
+          <caret line="934" selection-start-line="934" selection-end-line="934" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>Python 3.6</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
