@@ -17,18 +17,16 @@ README
 *Automated inspection and generation of excel documents to send OA system*
 *****
 ## dist folder
-*该文件夹是一个由pyinstaller执行打包的可执行的exe文件（包含两个项目autoThread、inspectionThread）*  
-
 
 |环境|配置|
 |----|-----|
 |`系统环境`|***windows server 2016***|
 |`SDK版本`|___python3.6以上___|
-|`安装模块`|___cx_Oracle、win32、ctypes、pythoncom___|
+|`安装模块`|___cx_Oracle、win32、ctypes、pythoncom___|  
 
 
-*autoThread使用方法：*  
-*1、请将gywl.bak gywl.dat gywl.dir 三个文件放入dist对应的程序文件中（该文件中包含数据库tns连接相关的信息以及web应用user、passwd信息，由于文件存在敏感信息，本项目中并没有将该文件上传）。*  
+*Project autoThread使用方法：*  
+*1、请将gywl.bak gywl.dat gywl.dir三个文件放入dist对应的程序文件中（该文件中包含数据库tns连接相关的信息以及web应用user、passwd信息，由于文件存在敏感信息，本项目中并没有将该文件上传）。*  
 
 *2、DevopsConf是相关查询sql、发送规则等配置文件。*  
 
