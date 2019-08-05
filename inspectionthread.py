@@ -37,10 +37,10 @@ def s_time():
     return mon, tues, wen, thur, fri
 
 
-def timer(t1, t2, chrome, url_mq, user, password, url_oa, oa_user, oa_password, title, test):
+def timer(t1, t2, chrome, url_mq, user, password, url_oa, oa_user, oa_password, title, test, week1):
     week = time.strftime("%A")
     clock = time.strftime("%H:%M:%S")
-    if week == 'Sunday' and t1 <= clock < t2:
+    if week == week1 and t1 <= clock < t2:
         log().info('Start the task：%s' % time.strftime("%Y-%m-%d %H:%M:%S"))
         day = time.strftime("%Y-%m-%d")
         filename = "%s\\formatLogs\\MQPic\\%s\\赛飞uap巡检报告%s~%s.xlsx" % (usual, day, s_time()[0], s_time()[4])
@@ -51,7 +51,7 @@ def timer(t1, t2, chrome, url_mq, user, password, url_oa, oa_user, oa_password, 
     else:
         log().info('Do not perform automatic inspection tasks within the specified time range')
     global timer1
-    timer1 = Timer(inTime, timer, [t1, t2, chrome, url_mq, user, password, url_oa, oa_user, oa_password, title, test])
+    timer1 = Timer(inTime, timer, [t1, t2, chrome, url_mq, user, password, url_oa, oa_user, oa_password, title, test, week1])
     timer1.start()
 
 
@@ -336,8 +336,9 @@ def main():
     oa_password = file['oa']['passwd']
     t1 = deploy().get('ins', 't1')
     t2 = deploy().get('ins', 't2')
+    week1 = deploy().get('ins', 'week')
     thread_list = list()
-    thread1 = Timer(1, timer, [t1, t2, chrome, url_mq, user, password, url_oa, oa_user, oa_password, title, test])
+    thread1 = Timer(1, timer, [t1, t2, chrome, url_mq, user, password, url_oa, oa_user, oa_password, title, test, week1])
     thread2 = Thread(target=clean_screen, name='cleanScreenThread')
     thread3 = Thread(target=check_thread, name='CheckThread')
     thread_list.append(thread1)
