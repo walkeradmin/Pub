@@ -31,4 +31,7 @@ README
 
 >>*2、DevopsConf是相关查询sql、发送规则等配置文件。*  
 
->>*3、以上两步执行过后，执行dist文件夹下的autoThread.exe即可。*
+>>*3、以上两步执行过后，执行dist文件夹下的autoThread.exe即可。*  
+
+
+***Project2***
