@@ -2,99 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="08980bf8-b570-4e3a-ba8e-233837640c00" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/autoThread.spec" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/autoThread/Analysis-00.toc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/autoThread/COLLECT-00.toc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/autoThread/EXE-00.toc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/autoThread/PKG-00.pkg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/autoThread/PKG-00.toc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/autoThread/PYZ-00.pyz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/autoThread/PYZ-00.toc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/autoThread/autoThread.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/autoThread/autoThread.exe.manifest" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/autoThread/base_library.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/autoThread/warn-autoThread.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/autoThread/xref-autoThread.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/inspectionthread/Analysis-00.toc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/inspectionthread/COLLECT-00.toc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/inspectionthread/EXE-00.toc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/inspectionthread/PKG-00.pkg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/inspectionthread/PKG-00.toc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/inspectionthread/PYZ-00.pyz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/inspectionthread/PYZ-00.toc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/inspectionthread/Tree-00.toc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/inspectionthread/Tree-01.toc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/inspectionthread/base_library.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/inspectionthread/inspectionthread.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/inspectionthread/inspectionthread.exe.manifest" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/inspectionthread/warn-inspectionthread.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/inspectionthread/xref-inspectionthread.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/autoThread/Include/pyconfig.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/autoThread/VCRUNTIME140.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/autoThread/_bz2.pyd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/autoThread/_ctypes.pyd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/autoThread/_decimal.pyd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/autoThread/_hashlib.pyd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/autoThread/_lzma.pyd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/autoThread/_queue.pyd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/autoThread/_socket.pyd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/autoThread/_ssl.pyd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/autoThread/_win32sysloader.pyd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/autoThread/autoThread.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/autoThread/autoThread.exe.manifest" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/autoThread/base_library.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/autoThread/certifi/cacert.pem" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/autoThread/cx_Oracle.cp37-win_amd64.pyd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/autoThread/libcrypto-1_1.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/autoThread/libssl-1_1.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/autoThread/pyexpat.pyd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/autoThread/python37.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/autoThread/pythoncom37.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/autoThread/pywintypes37.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/autoThread/select.pyd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/autoThread/unicodedata.pyd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/autoThread/win32api.pyd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/autoThread/win32clipboard.pyd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/autoThread/win32evtlog.pyd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/autoThread/win32gui.pyd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/inspectionthread/Include/pyconfig.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/inspectionthread/PIL/_imaging.cp37-win_amd64.pyd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/inspectionthread/PIL/_imagingtk.cp37-win_amd64.pyd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/inspectionthread/PIL/_webp.cp37-win_amd64.pyd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/inspectionthread/VCRUNTIME140.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/inspectionthread/_bz2.pyd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/inspectionthread/_ctypes.pyd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/inspectionthread/_decimal.pyd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/inspectionthread/_elementtree.pyd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/inspectionthread/_hashlib.pyd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/inspectionthread/_lzma.pyd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/inspectionthread/_queue.pyd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/inspectionthread/_socket.pyd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/inspectionthread/_ssl.pyd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/inspectionthread/base_library.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/inspectionthread/certifi/cacert.pem" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/inspectionthread/chromedriver.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/inspectionthread/inspectionthread.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/inspectionthread/inspectionthread.exe.manifest" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/inspectionthread/libcrypto-1_1.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/inspectionthread/libssl-1_1.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/inspectionthread/pyexpat.pyd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/inspectionthread/python37.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/inspectionthread/pywintypes37.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/inspectionthread/select.pyd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/inspectionthread/selenium/webdriver/firefox/amd64/x_ignore_nofocus.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/inspectionthread/selenium/webdriver/firefox/webdriver.xpi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/inspectionthread/selenium/webdriver/firefox/webdriver_prefs.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/inspectionthread/selenium/webdriver/firefox/x86/x_ignore_nofocus.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/inspectionthread/selenium/webdriver/remote/getAttribute.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/inspectionthread/selenium/webdriver/remote/isDisplayed.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/inspectionthread/unicodedata.pyd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/inspectionthread/win32api.pyd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/inspectionthread/win32evtlog.pyd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/inspectionthread/win32wnet.pyd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inspectionthread.spec" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logformat.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -108,12 +15,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Basic.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="489">
               <caret line="934" selection-start-line="934" selection-end-line="934" />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/autoThread.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-783" />
           </provider>
         </entry>
       </file>
@@ -153,7 +67,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-12" />
     <option name="y" value="-12" />
     <option name="width" value="2800" />
@@ -214,7 +128,7 @@
       <updated>1564625822884</updated>
       <workItem from="1564625824181" duration="1337000" />
       <workItem from="1564727709504" duration="2175000" />
-      <workItem from="1564975248569" duration="248000" />
+      <workItem from="1564975248569" duration="3005000" />
     </task>
     <task id="LOCAL-00001" summary="first test commit">
       <created>1564625948456</created>
@@ -237,14 +151,29 @@
       <option name="project" value="LOCAL" />
       <updated>1564728380024</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="autoSend and autoInspection">
+      <created>1564975663499</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1564975663499</updated>
+    </task>
+    <task id="LOCAL-00005" summary="conf">
+      <created>1564980793168</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1564980793168</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3760000" />
+    <option name="totallyTimeSpent" value="6517000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1513" height="973" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14570446" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -284,7 +213,9 @@
     <MESSAGE value="first test commit" />
     <MESSAGE value="test" />
     <MESSAGE value="second commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="second commit" />
+    <MESSAGE value="autoSend and autoInspection" />
+    <MESSAGE value="conf" />
+    <option name="LAST_COMMIT_MESSAGE" value="conf" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/test.py" />
@@ -300,6 +231,11 @@
         <state relative-caret-position="489">
           <caret line="934" selection-start-line="934" selection-end-line="934" />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/autoThread.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-783" />
       </provider>
     </entry>
   </component>
