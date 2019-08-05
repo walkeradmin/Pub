@@ -7,7 +7,7 @@ README
 |E-mail|402264457@qq.com
 
 
-
+## Source description
 |SCRIPT|DESCRIPTION|
 |----|-----|
 |`Basic.py`|***Study notes（Automate The Boring Stuff With Python）***|
@@ -20,9 +20,9 @@ README
 
 |环境|配置|
 |----|-----|
-|`系统环境`|***windows server 2016***|
-|`SDK版本`|___python3.6以上___|
-|`安装模块`|___cx_Oracle、win32、ctypes、pythoncom___|       
+|`System environment`|***windows server 2016***|
+|`SDK Version`|___python3.6以上___|
+|`Installation module`|___cx_Oracle、win32、ctypes、pythoncom___|       
   
   
 ***Project1***   
