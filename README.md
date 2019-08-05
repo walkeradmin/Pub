@@ -7,7 +7,7 @@ README
 |E-mail|402264457@qq.com
 
 
-## Source description
+## Description
 |SCRIPT|DESCRIPTION|
 |----|-----|
 |`Basic.py`|***Study notes（Automate The Boring Stuff With Python）***|
@@ -15,9 +15,7 @@ README
 |`inspectionThread.py`|___Automated inspection and generation of excel documents to send OA system___|  
 
 
-
-
-## Deployment environment
+## Deployment
 |ENVIRONMENT|DEPLOY|
 |----|-----|
 |`System environment`|***windows server 2016***|
