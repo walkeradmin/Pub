@@ -16,15 +16,16 @@ README
 
 
 
-## dist folder
 
-|环境|配置|
+## Deployment environment
+|ENVIRONMENT|DEPLOY|
 |----|-----|
 |`System environment`|***windows server 2016***|
 |`SDK Version`|___python3.6以上___|
 |`Installation module`|___cx_Oracle、win32、ctypes、pythoncom___|       
   
   
+ ## Instructions
 ***Project1***   
 *autoThread使用方法：*  
 >>*1、请将gywl.bak gywl.dat gywl.dir、DevopsConf.ini四个文件放入dist对应的程序文件中（该文件中包含数据库tns连接相关的信息以及web应用user、passwd信息，由于文件存在敏感信息，本项目中并没有将该文件上传）。*  
