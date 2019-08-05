@@ -58,7 +58,8 @@ class ORDER:
     def __init__(self):
         self._clock_order = eval(deploy().get('Clock', 'clock_order'))
         self._allTime = eval(deploy().get('Timer', 'allTime'))
-        self._folderAll = deploy().get('Path', 'folderAll')
+        # self._folderAll = deploy().get('Path', 'folderAll')
+        self._folderAll = os.getcwd() + "\\formatLogs\\allFileLog\\"
         self._a, self._b, self._c, self._d, self._e, self._f = -1, -2, -3, -4, -5, -6
         self._mutex = Lock()
         self._sql_all_1 = deploy().get('SQL', 'order_all')
@@ -252,7 +253,8 @@ class DROP(ctypes.Structure):
 class FILE:
     def __init__(self):
         self._clock_kh = eval(deploy().get('Clock', 'clock_kh'))
-        self._folderKh = deploy().get('Path', 'folderKh')
+        # self._folderKh = deploy().get('Path', 'folderKh')
+        self._folderKh = os.getcwd() + "\\formatLogs\\khFileLog\\"
         self._khTime = eval(deploy().get('Timer', 'khTime'))
         self._info1 = 'Copying to clipboard, filename：'
         self._info2 = 'CLIP_FILE task perform succeed'
@@ -416,8 +418,8 @@ class FILE:
             for i in self._clock_kh:
                 send_time = time.strftime("%Y-%m-%d {}".format(i))
                 of_time = datetime.datetime.strptime(send_time, "%Y-%m-%d %H:%M:%S")
-            # 11:30:00.xx < x < 11:31:00.xx
-            # 16:00:00.xx < x < 16:01:00.xx
+                # 11:30:00.xx < x < 11:31:00.xx
+                # 16:00:00.xx < x < 16:01:00.xx
                 if of_time < now < of_time + datetime.timedelta(minutes=1):
                     self.query_kh()
                 else:
@@ -432,7 +434,8 @@ class SH:
         self._clock_erp = deploy().get('Clock', 'clock_erp')
         self._erpTime = eval(deploy().get('Timer', 'erpTime'))
         self._hrTime = eval(deploy().get('Timer', 'hrTime'))
-        self._folderErp = deploy().get('Path', 'folderErp')
+        # self._folderErp = deploy().get('Path', 'folderErp')
+        self._folderErp = os.getcwd() + "\\formatLogs\\erpLog\\"
         self._mess = '辉瑞卡单，请及时处理'
         self._sql_sh = deploy().get('SQL', 'sql_sh')
         self._sql_sn = deploy().get('SQL', 'sql_sn')
