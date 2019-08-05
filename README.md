@@ -27,12 +27,17 @@ README
   
 ***Project1***   
 *autoThread使用方法：*  
->>*1、请将gywl.bak gywl.dat gywl.dir三个文件放入dist对应的程序文件中（该文件中包含数据库tns连接相关的信息以及web应用user、passwd信息，由于文件存在敏感信息，本项目中并没有将该文件上传）。*  
+>>*1、请将gywl.bak gywl.dat gywl.dir、DevopsConf.ini四个文件放入dist对应的程序文件中（该文件中包含数据库tns连接相关的信息以及web应用user、passwd信息，由于文件存在敏感信息，本项目中并没有将该文件上传）。*  
 
 >>*2、DevopsConf是相关查询sql、发送规则等配置文件。*  
 
 >>*3、以上两步执行过后，执行dist文件夹下的autoThread.exe即可。*    
   
   
-***Project2***
+***Project2***  
 *inspectionThread使用方法：*  
+>>*1、请将gywl.bak gywl.dat gywl.dir、DevopsConf.ini、webdriver驱动、tem（模板文件）六个文件放入dist对应的程序文件中（该文件中包含数据库tns连接相关的信息以及web应用user、passwd信息，由于文件存在敏感信息，本项目中并没有将该文件上传）。*  
+
+>>*2、DevopsConf可配置巡检时间。*  
+
+>>*3、以上两步执行过后，执行dist文件夹下的inspectionThread.exe即可。*   
