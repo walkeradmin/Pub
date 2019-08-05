@@ -17,7 +17,6 @@ from threading import Timer, Thread
 import alterwet
 import traceback
 
-# usual = "C:\\Users\\Administrator\\IdeaProjects\\MyProject"
 usual = os.getcwd()
 
 
