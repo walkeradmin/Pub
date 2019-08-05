@@ -45,5 +45,5 @@ README
 ## Display  
 |#|AUTOTHREAD|DISPLAY|
 |---|---|----
-|1|`LOGGER`|![](https://github.com/walkeradmin/Pub/blob/master/Dispic/query_sendqq_log_1.png)
-|2|`~`|![](https://github.com/walkeradmin/Pub/blob/master/Dispic/query_sendqq_log_2.png)
+|1|`MESS`|![](https://github.com/walkeradmin/Pub/blob/master/Dispic/query_sendqq_log_1.png)
+|2|`FILE`|![](https://github.com/walkeradmin/Pub/blob/master/Dispic/query_sendqq_log_2.png)
