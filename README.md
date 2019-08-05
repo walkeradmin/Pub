@@ -8,7 +8,7 @@ README
 
 ****
 
-|CODE|DESCRIPTION|
+|SCRIPT|DESCRIPTION|
 |----|-----|
 |`Basic.py`|***Study notes（Automate The Boring Stuff With Python）***|
 |`autoThread.py`|___Automatic query automatically pushes qq messages through win32 module___|
