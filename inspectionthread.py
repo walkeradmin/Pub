@@ -16,7 +16,8 @@ import threading
 from threading import Timer, Thread
 import alterwet
 import traceback
-
+import configparser
+# usual = "C:\\Users\\Administrator\\IdeaProjects\\MyProject"
 usual = os.getcwd()
 
 
@@ -44,7 +45,7 @@ def timer(t1, t2, chrome, url_mq, user, password, url_oa, oa_user, oa_password, 
         day = time.strftime("%Y-%m-%d")
         filename = "%s\\formatLogs\\MQPic\\%s\\赛飞uap巡检报告%s~%s.xlsx" % (usual, day, s_time()[0], s_time()[4])
         path = "%s\\formatLogs\\MQPic\\%s\\" % (usual, day)
-        title = title % (s_time()[0], s_time()[4])
+        title = title.format(s_time()[0], s_time()[4])
         element(chrome, url_mq, user, password, url_oa, oa_user, oa_password, title, test, filename, path)
         time.sleep(1)
     else:
@@ -238,7 +239,7 @@ def oa_window(chrome, url, user, password, title, test, filename):
         drive.execute_script("$(arguments[0]).click()", determine)                         # determine class=space
         drive.switch_to.frame('zwIframe')                                                  # switch to Superior frame id
         drive.switch_to.frame(0)                                                           # switch first frame
-        drive.find_element_by_tag_name('body').send_keys(test % (s_time()[0], s_time()[4], time.strftime("%Y-%m-%d %H:%M:%S")))      # iframe editor send keys
+        drive.find_element_by_tag_name('body').send_keys(test.format(s_time()[0], s_time()[4], time.strftime("%Y-%m-%d %H:%M:%S")))      # iframe editor send keys
         drive.switch_to.default_content()
         drive.find_element_by_id('sendId').click()                                          # send
         drive.switch_to.window(drive.window_handles[0])
@@ -311,41 +312,30 @@ def log():
         log().error(str(traceback.format_exc()))
 
 
+def deploy():
+    conf_file = os.path.join(os.getcwd(), 'DevopsConf.ini')
+    cp = configparser.ConfigParser()
+    cp.read(conf_file)
+    return cp
+
+
 def main():
     global cleanTime, inTime, checkTime
     inTime = 30
     cleanTime = 7200
     checkTime = 3600
     chrome = "%s\\Chromedriver.exe" % usual
-    url_mq = "http://10.32.11.45:3000/d/7RKOkRZWk/mq-api"
-    url_oa = "https://oa.sinopharmholding.com/seeyon/main.do?method=main"
-    title = 'AMQ和缓存巡检报告%s~%s'
-    test = '''各位领导：
-
-赛飞UAP：AMQ和缓存巡检报告
-时间：%s~%s
-赛飞UAP：AMQ服务巡检情况
-总体状况:无明显异常
-问题: 无
-
-目前：无
-
-暂无其他异常
-缓存服务
-总体状况:无明显异常
-问题:无
-
-详情见附件
-
-                                                                                                    Test By Walker
-                                                                                                    %s'''
+    url_mq = deploy().get('ins', 'url_mq')
+    url_oa = deploy().get('ins', 'url_oa')
+    title = deploy().get('ins', 'title')
+    test = deploy().get('ins', 'test')
     file = shelve.open('gywl')
     user = file['grafana']['user']
     password = file['grafana']['passwd']
     oa_user = file['oa']['user']
     oa_password = file['oa']['passwd']
-    t1 = '00:00:00'
-    t2 = '00:00:30'
+    t1 = deploy().get('ins', 't1')
+    t2 = deploy().get('ins', 't2')
     thread_list = list()
     thread1 = Timer(1, timer, [t1, t2, chrome, url_mq, user, password, url_oa, oa_user, oa_password, title, test])
     thread2 = Thread(target=clean_screen, name='cleanScreenThread')
