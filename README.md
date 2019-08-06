@@ -4,7 +4,7 @@ README
 
 |Author|Walker|
 |---|---
-|E-mail|402264457@qq.com
+|QQ|402264457
 
 
 ## Description
