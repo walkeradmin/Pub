@@ -23,7 +23,34 @@ README
 |`Installation module`|___cx_Oracle、win32、ctypes、pythoncom___|       
   
   
- ## Instructions
+## Instructions
+|SCRIPT|HISTORIC VER|
+|----|-----|
+|`autoThread`|***1、07-12 single process***|
+| |__Problem：High CPU consumption (25%)__|
+| |___2、07-13  Add logging format___|
+| |___3、07-15  Modify simple format___|
+| |___4、07-17  Update logging___|
+| |__Add output file__|
+| |___4、07-23  Modify class(__init__)___| 
+| |__Add clean screen__|
+| |__Add Multi-threaded mode__|
+| |__Solve：High CPU consumption__|
+| |__Solve：Concurrency problem(mutex、join)__|
+| | |
+| | |
+|`inspectionThread`|***1、07-05 single process、***|
+| |***2、07-06 logging format***|
+| |***3、07-14 Update element(07-13 oa web update)***|
+| |***Update log level***|
+| |__Problem：High CPU consumption (25%)__|
+| |__Problem：Unable to find element(No visual page available)__|
+| |__Problem：Drive error__|
+| |***4、07-15 Add clean screen***|
+| |__Solve：High CPU consumption__|
+| |***5、07-16 Update：Chrome dirver log level***|
+| |__Solve：Unable to find element(window_size)__|
+| |__Solve：Drive error(find exit element)__|
 ***Project1***   
 >>*autoThread：*  
 >>*1、请将gywl.bak、gywl.dat、gywl.dir、DevopsConf.ini四个文件放入dist对应的程序文件中（该文件中包含数据库tns连接相关的信息以及web应用user、passwd信息，由于文件存在敏感信息，本项目中并没有将该文件上传）。*  
