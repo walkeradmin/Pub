@@ -529,7 +529,7 @@ SAVE出库明细数：''' + str(save_out_del)
         else:
             mess1 = mess.format('ERP != SAVE') + '''
 
-哎呀!真是不走运呢~ ERP对单结果数量存在不一致，请xx同学开启电脑，开始工作吧~ ^.^
+哎呀!真是不走运呢~ ERP对单结果数量存在不一致，请xxx同学开启电脑，开始工作吧~ ^.^
 '''
             log().info('ERP != SAVE---Send data results to LiuHui')
             log().info(mess)
