@@ -19,7 +19,7 @@ README
 |ENVIRONMENT|DEPLOY|
 |----|-----|
 |`System environment`|***windows server 2016***|
-|`SDK Version`|___python3.6以上___|
+|`SDK Version`|___python3.6↑___|
 |`Installation module`|___cx_Oracle、win32、ctypes、pythoncom___|       
   
   
@@ -43,12 +43,13 @@ README
 
 
 ## Display  
+**********
 |·|AUTOTHREAD|DISPLAY|
 |---|---|----
 |1|`MESS`|![](https://github.com/walkeradmin/Pub/blob/master/Dispic/query_sendqq_log_1.png)
 |2|`FILE`|![](https://github.com/walkeradmin/Pub/blob/master/Dispic/query_sendqq_log_2.png)  
 
-
+********
 |·|INSPECTION|DISPLAY|
 |---|---|----
 |1|`LOGGER`|![](https://github.com/walkeradmin/Pub/blob/master/Dispic/autoins_excel_send_0.png)
