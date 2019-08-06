@@ -51,6 +51,7 @@ README
 | |***5、07-16 Update：Chrome dirver log level***|
 | |__Solve：Unable to find element(window_size)__|
 | |__Solve：Drive error(find exit element)__|
+********
 ***Project1***   
 >>*autoThread：*  
 >>*1、请将gywl.bak、gywl.dat、gywl.dir、DevopsConf.ini四个文件放入dist对应的程序文件中（该文件中包含数据库tns连接相关的信息以及web应用user、passwd信息，由于文件存在敏感信息，本项目中并没有将该文件上传）。*  
