@@ -78,10 +78,10 @@ README
 >>3、如何选择多进程or多线程?各有什么特点?  
 >>4、如何解决并发问题?  
 >>5、如何理解python GIL?  
->>6、如何解决死锁现象?(Timeout、银行家算法 )
+>>6、如何解决死锁现象?(Timeout、银行家算法 )  
 >>7、如何使用configparser灵活配置?  
->>8、如何使用selenium?如何处理(text field or textarea、Button、form、Mouse MoveOn、富文本框、alert/confirm/prompt)?
->>9、如何不重复创建thread降低系统开销资源消耗?(待深究)
+>>8、如何使用selenium?如何处理(text field or textarea、Button、form、Mouse   MoveOn、富文本框、alert/confirm/prompt)?  
+>>9、如何不重复创建thread降低系统开销资源消耗?(待深究)  
 
 ## Display  
 
