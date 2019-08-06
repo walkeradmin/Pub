@@ -26,12 +26,12 @@ README
 ## Instructions
 |SCRIPT|HISTORIC VER|
 |----|-----|
-|`autoThread`|***1、07-12 single process***|
+| |***1、07-12 single process***|
 | |__Problem：High CPU consumption (25%)__|
 | |___2、07-13  Add logging format___|
 | |___3、07-15  Modify simple format___|
 | |___4、07-17  Update logging___|
-| |__Add output file__|
+|`autoThread` |__Add output file__|
 | |___4、07-23  Modify class(__init__)___| 
 | |__Add clean screen__|
 | |__Add Multi-threaded mode__|
@@ -39,12 +39,12 @@ README
 | |__Solve：Concurrency problem(mutex、join)__|
 | | |
 | | |
-|`inspectionThread`|***1、07-05 single process、***|
+| |***1、07-05 single process、***|
 | |***2、07-06 logging format***|
 | |***3、07-14 Update element(07-13 oa web update)***|
 | |***Update log level***|
 | |__Problem：High CPU consumption (25%)__|
-| |__Problem：Unable to find element(No visual page available)__|
+|`inspectionThread` |__Problem：Unable to find element(No visual page available)__|
 | |__Problem：Drive error__|
 | |***4、07-15 Add clean screen***|
 | |__Solve：High CPU consumption__|
@@ -71,7 +71,7 @@ README
 
 
 ## Display  
-**********
+
 |·|AUTOTHREAD|DISPLAY|
 |---|---|----
 |1|`MESS`|![](https://github.com/walkeradmin/Pub/blob/master/Dispic/query_sendqq_log_1.png)
