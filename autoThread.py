@@ -809,6 +809,6 @@ if __name__ == '__main__':
 |2.The HeNan MA  mission is performed from 8:00 to 20:00.                                       |
 |3.The KH task first push time on 11:30:00 and the second push time on 16:00:00.                |
 |4.The erp|sh|sn mission is performed at 8 o'clock every night.                                 |
-|5.The HuiRui mission is performed every seconds.                                               |                
+|5.The HuiRui mission is performed every hours.                                               |                
 -------------------------------------------------------------------------------------------------''')
     main()
