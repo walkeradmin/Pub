@@ -87,8 +87,9 @@ README
 
 |·|AUTOTHREAD|DISPLAY|
 |---|---|----
-|1|`MESS`|![](https://github.com/walkeradmin/Pub/blob/master/Dispic/query_sendqq_log_1.png)
-|2|`FILE`|![](https://github.com/walkeradmin/Pub/blob/master/Dispic/query_sendqq_log_2.png)  
+|2|`LOGGER`|![](https://github.com/walkeradmin/Pub/blob/master/Dispic/query_sendqq_log_0.png)
+|2|`MESS`|![](https://github.com/walkeradmin/Pub/blob/master/Dispic/query_sendqq_log_1.png)
+|3|`FILE`|![](https://github.com/walkeradmin/Pub/blob/master/Dispic/query_sendqq_log_2.png)  
 
 ********
 |·|INSPECTION|DISPLAY|
