@@ -11,8 +11,8 @@ README
 |SCRIPT|DESCRIPTION|
 |----|-----|
 |`Basic.py`|***Study notes（Automate The Boring Stuff With Python）***|
-|`autoThread.py`|___Automatic query automatically pushes qq messages through win32 module___|
-|`inspectionThread.py`|___Automated inspection and generation of excel documents to send OA system___|  
+|`autoThread.py`|___Use the cx_oracle module to query the available data, structure the data, and automatically push the data to qq through the win32 module (timer configurable)___|
+|`inspectionThread.py`|___Use the selenium and openpyxl modules to log in to the grafana(Data source zabbix) visual monitoring system for automatic inspection and generate inspection excel documents. After formatting the data, send the document to the OA system.___|  
 
 
 ## Deployment
@@ -20,7 +20,7 @@ README
 |----|-----|
 |`System environment`|***windows server 2016***|
 |`SDK version`|___python3.6↑___|
-|`Installation module`|___cx_Oracle、win32、ctypes、pythoncom___|       
+|`Installation module`|___cx_Oracle、win32、ctypes、pythoncom、selenium、openpyxl___|       
   
   
 ## Instructions
