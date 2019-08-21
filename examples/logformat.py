@@ -61,10 +61,10 @@ class Logger(object):
         self.logger.critical("CRITICAL - " + str(msg))
 
 
-# if __name__ == '__main__':
-    # log = Logger(logger='autoExcel')
-    # log.debug("debug")
-    # log.info("info")
-    # log.error("error")
-    # log.warning("warning")
-    # log.critical("critical")
+if __name__ == '__main__':
+    log = Logger(logger='autoExcel')
+    log.debug("debug")
+    log.info("info")
+    log.error("error")
+    log.warning("warning")
+    log.critical("critical")
