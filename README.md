@@ -37,6 +37,8 @@ README
 | |__Add Multi-threaded mode__|
 | |__Solve：High CPU consumption__|
 | |__Solve：Concurrency problem(mutex、join)__|
+| |___5、09-05  Add openpyxl module___|
+| |___6、09-06  Solve：send file Concurrency problem___
 | | |
 | | |
 | |***1、07-05 single process、***|
@@ -48,7 +50,7 @@ README
 | |__Problem：Drive error__|
 | |***4、07-15 Add clean screen***|
 | |__Solve：High CPU consumption__|
-| |***5、07-16 Update：Chrome dirver log level***|
+| |***5、07-16 Update：Chrome driver log level***|
 | |__Solve：Unable to find element(window_size)__|
 | |__Solve：Drive error(find exit element)__|
 ********
@@ -59,7 +61,18 @@ README
 >>*2、DevopsConf是相关查询sql、发送规则等配置文件。*  
 
 >>*3、以上两步执行过后，执行dist文件夹下的autoThread.exe即可。*    
-  
+
+>>*DevopsConf：*  
+>>*该配置文件是全局配置文件，包含以下配置信息:*  
+>>*1、SQL模块配置，若查询条件发生变更，请直接修改Oracle中视图即可，并且无需重启程序*  
+>>*2、赛飞订单拦截规则配置，“物流中心名称”和QQ群名需要一一对应,列表中index前三位代表“出库”、“入库”、“调整单”，0表示开启推送1表示关闭推送。*  
+>>*3、二方货主和三方货主每日截单配置，二方货主需按照“运营中心”和QQ群名一一对照，三方货主按照“货主名称”和QQ群名一一对照配置*  
+>>*4、logging日志备份数量配置，默认配置了保留7分日志，可自定调整，(日志是按天进行分割,包含info、error)。
+>>*5、Grafana可视化自动化巡检配置，包含巡检时间区间、url、OA发送模板。*  
+>>*6、请注意！全局配置中0始终代表True，1代表False。*  
+**注意事项：若进行相关配置文件修改，请提前将配置文件进行备份，以免错位配置导致程序报错。**  
+
+
   
 ***Project2***  
 >>*inspectionThread：*  
@@ -72,16 +85,17 @@ README
 
 ***Reward***  
 知行合一，学以致用。  
+Automate the boring stuff with python
 >>1、如何将数据结构化，以便处理?  
 >>2、如何熟练定义使用Class类对象?  
 >>3、如何选择多进程or多线程?各有什么特点?  
 >>4、如何解决并发问题?  
 >>5、如何理解python GIL?  
->>6、如何解决死锁现象?(Timeout、银行家算法 )  
+>>6、如何解决死锁现象?(Timeout、***银行家算法***)  
 >>7、如何使用configparser灵活配置?  
 >>8、如何使用selenium?如何处理(text field or textarea、Button、form、Mouse   MoveOn、富文本框、alert/confirm/prompt)?  
 >>9、如何不重复创建thread降低系统开销资源消耗?(待深究)  
-
+>>10、如何灵活运用openpyxl模块生成execel文档?
 ## Display  
 
 |·|AUTOTHREAD|DISPLAY|
