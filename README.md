@@ -110,7 +110,9 @@ Automate the boring stuff with python
 |2|`LOGGER`|![](https://github.com/walkeradmin/Pub/blob/master/Dispic/query_sendqq_log_0.png)
 |2|`MESS`|![](https://github.com/walkeradmin/Pub/blob/master/Dispic/query_sendqq_log_1.png)
 |3|`FILE`|![](https://github.com/walkeradmin/Pub/blob/master/Dispic/query_sendqq_log_2.png)  
-
+|3|`Conf`|![](https://github.com/walkeradmin/Pub/blob/master/Dispic/DevopsConf1.png)
+|3|`Conf`|![](https://github.com/walkeradmin/Pub/blob/master/Dispic/DevopsConf2.png)
+|3|`Conf`|![](https://github.com/walkeradmin/Pub/blob/master/Dispic/DevopsConf2.png)
 ********
 |·|INSPECTION|DISPLAY|
 |---|---|----
