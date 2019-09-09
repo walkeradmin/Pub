@@ -18,25 +18,25 @@ README
 ## Deployment
 |ENVIRONMENT|DEPLOY|
 |----|-----|
-|`System environment`|***windows server 2016***|
+|`System environment`|***windows server 2016/2008(recommend 2016)***|
 |`SDK version`|___python3.6↑___|
-|`Installation module`|___cx_Oracle、win32、ctypes、pythoncom、selenium、openpyxl、Pilow___|       
+|`Installation module`|___cx_Oracle、win32、ctypes、pythoncom、logformat、requests、openpyxl、selenium、Pilow___|       
   
   
 ## Instructions
 |SCRIPT|HISTORIC VER|
 |----|-----|
 | |***1、07-12 single process***|
-| |__Problem：High CPU consumption (25%)__|
+| |___Problem：High CPU consumption (25%)___|
 | |___2、07-13  Add logging format___|
 | |___3、07-15  Modify simple format___|
 | |___4、07-17  Update logging___|
-|`autoThread` |__Add output file__|
+|`autoThread` |___Add output file___|
 | |___4、07-23  Modify class(__init__)___| 
-| |__Add clean screen__|
-| |__Add Multi-threaded mode__|
-| |__Solve：High CPU consumption__|
-| |__Solve：Concurrency problem(mutex、join)__|
+| |___Add clean screen___|
+| |___Add Multi-threaded mode___|
+| |___Solve：High CPU consumption___|
+| |___Solve：Concurrency problem(mutex、join)___|
 | |___5、09-05  Add openpyxl module___|
 | |___6、09-06  Solve：send file Concurrency problem___
 | | |
@@ -45,42 +45,48 @@ README
 | |***2、07-06 logging format***|
 | |***3、07-14 Update element(07-13 oa web update)***|
 | |***Update log level***|
-| |__Problem：High CPU consumption (25%)__|
-|`inspectionThread` |__Problem：Unable to find element(No visual page available)__|
-| |__Problem：Drive error__|
+| |***Problem：High CPU consumption (25%)***|
+|`inspectionThread` |***Problem：Unable to find element(No visual page available)***|
+| |***Problem：Drive error***|
 | |***4、07-15 Add clean screen***|
-| |__Solve：High CPU consumption__|
+| |***Solve：High CPU consumption***|
 | |***5、07-16 Update：Chrome driver log level***|
-| |__Solve：Unable to find element(window_size)__|
-| |__Solve：Drive error(find exit element)__|
+| |***Solve：Unable to find element(window_size)***|
+| |***Solve：Drive error(find exit element)***|
 ********
 ***Project1***   
->>*autoThread：*  
->>*1、请将gywl.bak、gywl.dat、gywl.dir、DevopsConf.ini四个文件放入dist对应的程序文件中（该文件中包含数据库tns连接相关的信息以及web应用user、passwd信息，由于文件存在敏感信息，本项目中并没有将该文件上传）。*  
+>>autoThread：  
+>>1、请将gywl.bak、gywl.dat、gywl.dir、DevopsConf.ini四个文件放入dist对应的程序文件中（该文件中包含数据库tns连接相关的信息以及web应用user、passwd信息，由于文件存在敏感信息，本项目中并没有将该文件上传）。  
 
->>*2、DevopsConf是相关查询sql、发送规则等配置文件。*  
+>>2、DevopsConf是相关查询sql、发送规则等配置文件。  
 
->>*3、以上两步执行过后，执行dist文件夹下的autoThread.exe即可。*    
+>>3、以上两步执行过后，执行dist文件夹下的autoThread.exe即可。    
 
->>*DevopsConf：*  
->>*该配置文件是全局配置文件，包含以下配置信息:*  
->>*1、SQL模块配置，若查询条件发生变更，请直接修改Oracle中视图即可，并且无需重启程序*  
->>*2、赛飞订单拦截规则配置，“物流中心名称”和QQ群名需要一一对应,列表中index前三位代表“出库”、“入库”、“调整单”，0表示开启推送1表示关闭推送。*  
->>*3、二方货主和三方货主每日截单配置，二方货主需按照“运营中心”和QQ群名一一对照，三方货主按照“货主名称”和QQ群名一一对照配置*  
->>*4、logging日志备份数量配置，默认配置了保留7分日志，可自定调整，(日志是按天进行分割,包含info、error)。
->>*5、Grafana可视化自动化巡检配置，包含巡检时间区间、url、OA发送模板。*  
->>*6、请注意！全局配置中0始终代表True，1代表False。*  
+>>DevopsConf：  
+>>该配置文件是全局配置文件，包含以下配置信息:  
+>>1、SQL模块配置，若查询条件发生变更，请直接修改Oracle中视图即可，并且无需重启程序  
+
+>>2、赛飞订单拦截规则配置，“物流中心名称”和QQ群名需要一一对应,列表中index前三位代表“出库”、“入库”、“调整单”，0表示开启推送1表示关闭推送。  
+
+>>3、二方货主和三方货主每日截单配置，二方货主需按照“运营中心”和QQ群名一一对照，三方货主按照“货主名称”和QQ群名一一对照配置  
+
+>>4、logging日志备份数量配置，默认配置了保留7分日志，可自定调整，(日志是按天进行分割,包含info、error)。
+
+>>5、Grafana可视化自动化巡检配置，包含巡检时间区间、url、OA发送模板。  
+
+>>6、请注意！全局配置中0始终代表True，1代表False。
+  
 **注意事项：若进行相关配置文件修改，请提前将配置文件进行备份，以免错位配置导致程序报错。**  
 
 
   
 ***Project2***  
->>*inspectionThread：*  
->>*1、请将gywl.bak、gywl.dat、gywl.dir、DevopsConf.ini、webdriver驱动、tem（模板文件）六个文件放入dist对应的程序文件中（该文件中包含数据库tns连接相关的信息以及web应用user、passwd信息，由于文件存在敏感信息，本项目中并没有将该文件上传）。*  
+>>inspectionThread：  
+>>1、请将gywl.bak、gywl.dat、gywl.dir、DevopsConf.ini、webdriver驱动、tem（模板文件）六个文件放入dist对应的程序文件中（该文件中包含数据库tns连接相关的信息以及web应用user、passwd信息，由于文件存在敏感信息，本项目中并没有将该文件上传）。  
 
->>*2、DevopsConf可配置巡检时间。*  
+>>2、DevopsConf可配置巡检时间。  
 
->>*3、以上两步执行过后，执行dist文件夹下的inspectionThread.exe即可。*   
+>>3、以上两步执行过后，执行dist文件夹下的inspectionThread.exe即可。   
 
 
 ***Reward***  
