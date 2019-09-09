@@ -75,7 +75,7 @@ README
 >>5、Grafana可视化自动化巡检配置，包含巡检时间区间、url、OA发送模板。  
 
 >>6、请注意！全局配置中0始终代表True，1代表False。
-  
+![](https://github.com/walkeradmin/Pub/blob/master/Dispic/DevopsConf1.png)
 **注意事项：若进行相关配置文件修改，请提前将配置文件进行备份，以免错误配置导致程序报错。**  
 
 
