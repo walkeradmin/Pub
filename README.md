@@ -104,8 +104,8 @@ Automate the boring stuff with python
 >>8、如何使用selenium?如何处理(text field or textarea、Button、form、Mouse   MoveOn、富文本框、alert/confirm/prompt)?  
 >>9、如何不重复创建thread降低系统开销资源消耗?(待深究)  
 >>10、如何灵活运用openpyxl模块生成execel文档?  
->>11、如何使用ctypes拷贝出BMP数据以及copy_paste?(此处参考https://www.programcreek.com/python/example/63206/pythoncom.TYMED_HGLOBAL)
->>12、如何使用selenium捕获伪元素(before)、隐藏元素?(待研究)
+>>11、如何使用ctypes拷贝出BMP数据以及copy_paste?(此处参考https://www.programcreek.com/python/example/63206/pythoncom.TYMED_HGLOBAL)  
+>>12、如何使用selenium捕获伪元素(before)、隐藏元素?(待研究)  
 ## Display  
 
 |·|AUTOTHREAD|DISPLAY|
