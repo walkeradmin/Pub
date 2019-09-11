@@ -113,7 +113,7 @@ Automate the boring stuff with python
 |3|`Conf1`|![](https://github.com/walkeradmin/Pub/blob/master/Dispic/DevopConf1.png)
 |3|`Conf2`|![](https://github.com/walkeradmin/Pub/blob/master/Dispic/DevopConf2.png)
 |3|`Conf3`|![](https://github.com/walkeradmin/Pub/blob/master/Dispic/DevopConf3.png)
-********
+*********
 |·|INSPECTION|DISPLAY|
 |---|---|----
 |1|`LOGGER`|![](https://github.com/walkeradmin/Pub/blob/master/Dispic/autoins_excel_send_0.png)
