@@ -58,6 +58,8 @@ README
 >>autoThread：  
 >>1、请将gywl.bak、gywl.dat、gywl.dir、DevopsConf.ini四个文件放入dist对应的程序文件中（该文件中包含数据库tns连接相关的信息以及web应用user、passwd信息，由于文件存在敏感信息，本项目中并没有将该文件上传）dist目录下文件是由pyinstaller打包生成exe可执行文件，在windows注册列表可配置成开机自启程序，所以这里建议使用windows server 2016环境运行，实测2008版本打包会出现错误。  
 
+**注意事项：若对源码进行修改，修改后用pyinstaller工具打包py文件。**  
+
 >>2、DevopsConf是相关查询sql、发送规则等配置文件。  
 
 >>3、以上两步执行过后，执行dist文件夹下的autoThread.exe即可。    
@@ -76,7 +78,7 @@ README
 
 >>6、请注意！全局配置中0始终代表True，1代表False。
 
-**注意事项：若进行相关配置文件修改，请提前将配置文件进行备份，以免错误配置导致程序报错。**  
+**注意事项：所有配置文件的修改，请提前做好备份，以免配置错误导致程序报错。**  
 
 
   
@@ -103,6 +105,7 @@ Automate the boring stuff with python
 >>9、如何不重复创建thread降低系统开销资源消耗?(待深究)  
 >>10、如何灵活运用openpyxl模块生成execel文档?  
 >>11、如何使用ctypes拷贝出BMP数据以及copy_paste?(此处参考https://www.programcreek.com/python/example/63206/pythoncom.TYMED_HGLOBAL)
+>>12、如何使用selenium捕获伪元素(before)、隐藏元素?(待研究)
 ## Display  
 
 |·|AUTOTHREAD|DISPLAY|
