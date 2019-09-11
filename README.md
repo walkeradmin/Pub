@@ -56,7 +56,7 @@ README
 ********
 ***Project1***   
 >>autoThread：  
->>1、请将gywl.bak、gywl.dat、gywl.dir、DevopsConf.ini四个文件放入dist对应的程序文件中（该文件中包含数据库tns连接相关的信息以及web应用user、passwd信息，由于文件存在敏感信息，本项目中并没有将该文件上传）。  
+>>1、请将gywl.bak、gywl.dat、gywl.dir、DevopsConf.ini四个文件放入dist对应的程序文件中（该文件中包含数据库tns连接相关的信息以及web应用user、passwd信息，由于文件存在敏感信息，本项目中并没有将该文件上传）dist目录下文件是由pyinstaller打包生成exe可执行文件，在windows注册列表可配置成开机自启程序，所以这里建议使用windows server 2016环境运行，实测2008版本打包会出现错误。  
 
 >>2、DevopsConf是相关查询sql、发送规则等配置文件。  
 
@@ -112,7 +112,7 @@ Automate the boring stuff with python
 |3|`FILE`|![](https://github.com/walkeradmin/Pub/blob/master/Dispic/query_sendqq_log_2.png)  
 |3|`Conf1`|![](https://github.com/walkeradmin/Pub/blob/master/Dispic/DevopConf1.png)
 |3|`Conf2`|![](https://github.com/walkeradmin/Pub/blob/master/Dispic/DevopConf2.png)
-|3|`Conf3`|![](https://github.com/walkeradmin/Pub/blob/master/Dispic/DevopConf2.png)
+|3|`Conf3`|![](https://github.com/walkeradmin/Pub/blob/master/Dispic/DevopConf3.png)
 ********
 |·|INSPECTION|DISPLAY|
 |---|---|----
