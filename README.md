@@ -20,7 +20,7 @@ README
 |----|-----|
 |`System environment`|***windows server 2016/2008(recommend 2016)***|
 |`SDK version`|___python3.6↑___|
-|`Installation module`|___cx_Oracle、win32、ctypes、pythoncom、logformat、requests、openpyxl、selenium、Pilow___|       
+|`Installation module`|___cx_Oracle、pymysql、win32、ctypes、pythoncom、logformat、requests、schedule、openpyxl、selenium、Pilow___|       
   
   
 ## Instructions
