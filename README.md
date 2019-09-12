@@ -54,19 +54,27 @@ README
 | |***Solve：Unable to find element(window_size)***|
 | |***Solve：Drive error(find exit element)***|
 ********
+
 ***Project1***   
 >>autoThread：  
 >>1、请将gywl.bak、gywl.dat、gywl.dir、DevopsConf.ini四个文件放入dist对应的程序文件中（该文件中包含数据库tns连接相关的信息以及web应用user、passwd信息，由于文件存在敏感信息，本项目中并没有将该文件上传）dist目录下文件是由pyinstaller打包生成exe可执行文件，在windows注册列表可配置成开机自启程序，所以这里建议使用windows server 2016环境运行，实测2008版本打包会出现错误。  
-
-**注意事项：若对源码进行修改，修改后用pyinstaller工具打包py文件。**  
 
 >>2、DevopsConf是相关查询sql、发送规则等配置文件。  
 
 >>3、以上两步执行过后，执行dist文件夹下的autoThread.exe即可。    
 
->>DevopsConf：  
+   
+***Project2***  
+>>inspectionThread：  
+>>1、请将gywl.bak、gywl.dat、gywl.dir、DevopsConf.ini、webdriver驱动、tem（模板文件）六个文件放入dist对应的程序文件中（该文件中包含数据库tns连接相关的信息以及web应用user、passwd信息，由于文件存在敏感信息，本项目中并没有将该文件上传）。  
+
+>>2、DevopsConf可配置巡检时间。  
+
+>>3、以上两步执行过后，执行dist文件夹下的inspectionThread.exe即可。   
+
+***DevopsConf***    
 >>该配置文件是全局配置文件，包含以下配置信息:  
->>1、SQL模块配置，若查询条件发生变更，请直接修改Oracle中视图即可，并且无需重启程序  
+>>1、SQL模块配置，若查询条件发生变更，请直接修改Oracle中视图即可，并且无需重启程序。(***标注的配置修改后，需重启程序，其余配置修改后无需重启)  
 
 >>2、赛飞订单拦截规则配置，“物流中心名称”和QQ群名需要一一对应,列表中index前三位代表“出库”、“入库”、“调整单”，0表示开启推送1表示关闭推送。  
 
@@ -78,36 +86,17 @@ README
 
 >>6、请注意！全局配置中0始终代表True，1代表False。
 
-**注意事项：所有配置文件的修改，请提前做好备份，以免配置错误导致程序报错。**  
+***Shelve conf***
+>>gywl.bak、gywl.dat、gywl.dir该配置文件属于二进制文件，包含以下配置：
+>>1、Oracle IP、Name、User、Password
+>>2、Mysql IP、Port、User、Password、DB、Charset
+
+**注意事项1：若对源码进行修改，修改后用pyinstaller工具打包py文件。**  
+**注意事项2：所有配置文件的修改，请提前做好备份，以免配置错误导致程序报错。** 
+**注意事项3：gywl.bak、gywl.dat、gywl.dir二进制文件，在数据连接信息不发生改变无需修改，若需要修改请使用shelve重新生成文件即可。** 
 
 
-  
-***Project2***  
->>inspectionThread：  
->>1、请将gywl.bak、gywl.dat、gywl.dir、DevopsConf.ini、webdriver驱动、tem（模板文件）六个文件放入dist对应的程序文件中（该文件中包含数据库tns连接相关的信息以及web应用user、passwd信息，由于文件存在敏感信息，本项目中并没有将该文件上传）。  
-
->>2、DevopsConf可配置巡检时间。  
-
->>3、以上两步执行过后，执行dist文件夹下的inspectionThread.exe即可。   
-
-
-***Reward***  
-知行合一，学以致用。  
-Automate the boring stuff with python
->>1、如何将数据结构化，以便处理?  
->>2、如何熟练定义使用Class类对象?  
->>3、如何选择多进程or多线程?各有什么特点?  
->>4、如何解决并发问题?  
->>5、如何理解python GIL?  
->>6、如何解决死锁现象?(Timeout、**银行家算法**)  
->>7、如何使用configparser灵活配置?  
->>8、如何使用selenium?如何处理(text field or textarea、Button、form、Mouse   MoveOn、富文本框、alert/confirm/prompt)?  
->>9、如何不重复创建thread降低系统开销资源消耗?(待深究)  
->>10、如何灵活运用openpyxl模块生成execel文档?  
->>11、如何使用ctypes拷贝出BMP数据以及copy_paste?(此处参考https://www.programcreek.com/python/example/63206/pythoncom.TYMED_HGLOBAL)  
->>12、如何使用selenium捕获伪元素(before)、隐藏元素?(待研究)  
 ## Display  
-
 |·|AUTOTHREAD|DISPLAY|
 |---|---|----
 |1|`LOGGER`|![](https://github.com/walkeradmin/Pub/blob/master/Dispic/query_sendqq_log_0.png)
@@ -131,3 +120,19 @@ Automate the boring stuff with python
 |9|`LOAD`|![](https://github.com/walkeradmin/Pub/blob/master/Dispic/autoins_excel_send_7.png)
 |10|`MEM`|![](https://github.com/walkeradmin/Pub/blob/master/Dispic/autoins_excel_send_8.png)
 |11|`OA`|![](https://github.com/walkeradmin/Pub/blob/master/Dispic/autoins_excel_send_9.png)
+
+##Reward  
+**知行合一，学以致用。**    
+**Automate the boring stuff with python**  
+>>1、如何将数据结构化，以便处理?  
+>>2、如何熟练定义使用Class类对象?  
+>>3、如何选择多进程or多线程?各有什么特点?  
+>>4、如何解决并发问题?  
+>>5、如何理解python GIL?  
+>>6、如何解决死锁现象?(Timeout、**银行家算法**)  
+>>7、如何使用configparser灵活配置?  
+>>8、如何使用selenium?如何处理(text field or textarea、Button、form、Mouse   MoveOn、富文本框、alert/confirm/prompt)?  
+>>9、如何不重复创建thread降低系统开销资源消耗?(待深究)  
+>>10、如何灵活运用openpyxl模块生成execel文档?  
+>>11、如何使用ctypes拷贝出BMP数据以及copy_paste?(此处参考https://www.programcreek.com/python/example/63206/pythoncom.TYMED_HGLOBAL)  
+>>12、如何使用selenium捕获伪元素(before)、隐藏元素?(待研究)  
