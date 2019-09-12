@@ -106,6 +106,7 @@ README
 |5|`Conf2`|![](https://github.com/walkeradmin/Pub/blob/master/Dispic/DevopConf2.png)
 |6|`Conf3`|![](https://github.com/walkeradmin/Pub/blob/master/Dispic/DevopConf3.png)
 |7|`Conf4`|![](https://github.com/walkeradmin/Pub/blob/master/Dispic/DevopConf4.png)
+|8|`Conf5`|![](https://github.com/walkeradmin/Pub/blob/master/Dispic/DevopConf5.png)
 *********
 |·|INSPECTION|DISPLAY|
 |---|---|----
