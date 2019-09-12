@@ -123,7 +123,7 @@ README
 |10|`MEM`|![](https://github.com/walkeradmin/Pub/blob/master/Dispic/autoins_excel_send_8.png)
 |11|`OA`|![](https://github.com/walkeradmin/Pub/blob/master/Dispic/autoins_excel_send_9.png)
 
-##Reward  
+## Reward  
 **知行合一，学以致用。**    
 **Automate the boring stuff with python**  
 >>1、如何将数据结构化，以便处理?  
