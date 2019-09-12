@@ -53,7 +53,6 @@ README
 | |***5、07-16 Update：Chrome driver log level***|
 | |***Solve：Unable to find element(window_size)***|
 | |***Solve：Drive error(find exit element)***|
-********
 
 ***Project1***   
 >>autoThread：  
@@ -74,7 +73,7 @@ README
 
 ***DevopsConf***    
 >>该配置文件是全局配置文件，包含以下配置信息:  
->>1、SQL模块配置，若查询条件发生变更，请直接修改Oracle中视图即可，并且无需重启程序。(***标注的配置修改后，需重启程序，其余配置修改后无需重启)  
+>>1、SQL模块配置，若查询条件发生变更，请直接修改Oracle中视图即可，并且无需重启程序。(*标注的配置修改后，需重启程序，其余配置修改后无需重启)  
 
 >>2、赛飞订单拦截规则配置，“物流中心名称”和QQ群名需要一一对应,列表中index前三位代表“出库”、“入库”、“调整单”，0表示开启推送1表示关闭推送。  
 
@@ -90,10 +89,11 @@ README
 >>gywl.bak、gywl.dat、gywl.dir该配置文件属于二进制文件，包含以下配置：
 >>1、Oracle IP、Name、User、Password
 >>2、Mysql IP、Port、User、Password、DB、Charset
-
+  
+  
 **注意事项1：若对源码进行修改，修改后用pyinstaller工具打包py文件。**  
-**注意事项2：所有配置文件的修改，请提前做好备份，以免配置错误导致程序报错。** 
-**注意事项3：gywl.bak、gywl.dat、gywl.dir二进制文件，在数据连接信息不发生改变无需修改，若需要修改请使用shelve重新生成文件即可。** 
+**注意事项2：所有配置文件的修改，请提前做好备份，以免配置错误导致程序报错。**   
+**注意事项3：gywl.bak、gywl.dat、gywl.dir二进制文件，在数据连接信息不发生改变无需修改，若需要修改请使用shelve重新生成文件即可。**   
 
 
 ## Display  
