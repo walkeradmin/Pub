@@ -54,7 +54,8 @@ README
 | |***5、07-16 Update Chrome driver log level***|
 | |***Solve：Unable to find element(window_size)***|
 | |***Solve：Drive error(find exit element)***|
-| |***6、09-08 Update element***|
+| |***6、09-08 Update element***|  
+
 ***Project1***   
 >>autoThread：  
 >>1、gywl.bak、gywl.dat、gywl.dir、DevopsConf.ini四个文件放入dist对应的程序文件中（该文件中包含数据库tns连接相关的信息以及web应用user、passwd信息，由于文件存在敏感信息，本项目中并没有将该文件上传）dist目录下文件是由pyinstaller打包生成exe可执行文件，在windows注册列表可配置成开机自启程序，所以这里建议使用windows server 2016环境运行，实测2008版本打包会出现错误。  
@@ -133,8 +134,8 @@ README
 >>5、如何理解python GIL?  
 >>6、如何解决死锁现象?(Timeout、**银行家算法**)  
 >>7、如何使用configparser灵活配置?  
->>8、如何使用selenium?如何处理(text field or textarea、Button、form、Mouse   MoveOn、富文本框、alert/confirm/prompt)?  
->>9、如何不重复创建thread降低系统开销资源消耗?(待深究)  
->>10、如何灵活运用openpyxl模块生成execel文档?  
->>11、如何使用ctypes拷贝出BMP数据以及copy_paste?(此处参考https://www.programcreek.com/python/example/63206/pythoncom.TYMED_HGLOBAL)  
->>12、如何使用selenium捕获伪元素(before)、隐藏元素?(待研究)  
+>>8、如何使用selenium?如何处理(text field or textarea、Button、form、Mouse   MoveOn、富文本框、alert/confirm/prompt)?   
+>>9、如何不重复创建thread降低系统开销资源消耗?(待深究)   
+>>10、如何灵活运用openpyxl模块生成execel文档?   
+>>11、如何使用ctypes拷贝出BMP数据以及copy_paste?(此处参考https://www.programcreek  .com/python/example/63206/pythoncom.TYMED_HGLOBAL)   
+>>12、如何使用selenium捕获伪元素(before)、隐藏元素?(待研究)   
