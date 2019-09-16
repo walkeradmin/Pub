@@ -106,7 +106,7 @@ README
 |3|`FILE1`|![](https://github.com/walkeradmin/Pub/blob/master/Dispic/query_sendqq_log_2.png)
 |4|`FILE2`|![](https://github.com/walkeradmin/Pub/blob/master/Dispic/pic1.png)  
 |5|`FILE3`|![](https://github.com/walkeradmin/Pub/blob/master/Dispic/excel1.png)  
-|6|`FILE5`|![](https://github.com/walkeradmin/Pub/blob/master/Dispic/excel2.png)  
+|6|`FILE4`|![](https://github.com/walkeradmin/Pub/blob/master/Dispic/excel2.png)  
 |7|`Conf1`|![](https://github.com/walkeradmin/Pub/blob/master/Dispic/DevopConf1.png)  
 |8|`Conf2`|![](https://github.com/walkeradmin/Pub/blob/master/Dispic/DevopConf2.png)  
 |9|`Conf3`|![](https://github.com/walkeradmin/Pub/blob/master/Dispic/DevopConf3.png)  
