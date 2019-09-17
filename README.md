@@ -107,7 +107,7 @@ README
 |2|`error`|![](https://github.com/walkeradmin/Pub/blob/master/Dispic/log2.png)
 |3|`MESS`|![](https://github.com/walkeradmin/Pub/blob/master/Dispic/query_sendqq_log_1.png)
 |4|`FILE1`|![](https://github.com/walkeradmin/Pub/blob/master/Dispic/query_sendqq_log_2.png)
-|5|`FILE2`|![](https://github.com/walkeradmin/Pub/blob/master/Dispic/pic1.png)  
+|5|`FILE2`|![](https://github.com/walkeradmin/Pub/blob/master/Dispic/pic2.png)  
 |6|`FILE3`|![](https://github.com/walkeradmin/Pub/blob/master/Dispic/excel1.png)  
 |7|`FILE4`|![](https://github.com/walkeradmin/Pub/blob/master/Dispic/excel2.png)    
 |8|`FILE5`|![](https://github.com/walkeradmin/Pub/blob/master/Dispic/excel3.png)     
