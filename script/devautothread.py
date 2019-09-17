@@ -30,15 +30,6 @@ import schedule
 from selenium import webdriver
 from selenium.webdriver import ActionChains
 import pymysql
-# import sched
-# sem = Semaphore(1)
-# Turn capital
-# class MyConf(configparser.ConfigParser):
-#     def __init__(self, defaults=None):
-#         configparser.ConfigParser.__init__(self, defaults=None)
-#
-#     def optionxform(self, optionstr):
-#         return optionstr
 
 
 def remove_bom(config_path):  # BOM字节
@@ -50,7 +41,6 @@ def remove_bom(config_path):  # BOM字节
 
 
 def deploy():
-    # remove_bom("DevopsConf.ini")
     conf_file = os.path.join(os.getcwd(), 'DevopsConf.ini')
     cp = configparser.ConfigParser()
     cp.read(conf_file)
@@ -65,7 +55,6 @@ class ORDER:
         self._allTime = eval(deploy().get('Timer', 'allTime'))
         self._folderAll = os.getcwd() + "\\formatLogs\\allOrderFile\\"
         self._a, self._b, self._c, self._d, self._e, self._f = -1, -2, -3, -4, -5, -6
-        # self._mutex = Lock()
         self._sql_all_1 = deploy().get('SQL', 'order_all')
         self._sql_ma_1 = deploy().get('SQL', 'order_ma')
         self._info2 = 'CLIP_FILE task perform succeed'
@@ -82,9 +71,7 @@ class ORDER:
             log().info(
                 '| ORDER CLASS | TIMER FUNCTION | Message：'
                 'Time to stop pushing, the next query will start at 08:00 tomorrow morning |')
-        # global timer1
-        # timer1 = Timer(self._allTime, self.timer_all)
-        # timer1.start()
+
 
     def start_time(self):
         global clock
@@ -128,15 +115,13 @@ class ORDER:
     def send(self, send_mess, group_name):
         try:
             mutex.acquire()
-            # log().info('The clipboard is locked')
             w.OpenClipboard()
             w.EmptyClipboard()
             if type(send_mess) == str:
                 w.SetClipboardData(win32con.CF_UNICODETEXT, send_mess)
                 w.CloseClipboard()
-                # time wait 防止报错 pywintypes.error: (1418, 'GetClipboardData',线程没有打开的剪贴板)
+                # time wait pywintypes.error: (1418, 'GetClipboardData',线程没有打开的剪贴板)
                 time.sleep(1)
-                # TXGuiFoundation None
                 handle = win32gui.FindWindow('TXGuiFoundation', group_name)
                 win32gui.SendMessage(handle, 770, 0, 0)
                 win32gui.SendMessage(handle, win32con.WM_KEYDOWN, win32con.VK_RETURN, 0)
@@ -154,7 +139,6 @@ class ORDER:
                 win32gui.SendMessage(win, win32con.WM_KEYDOWN, win32con.VK_RETURN, 0)
                 log().info('| ORDER CLASS | SEND MESS FUNCTION | Message：' + self._info4 + ' |')
             mutex.release()
-            # log().info('Clipboard is unlocked')
         except Exception as e:
             error().error(str(e))
             error().error(traceback.format_exc())
@@ -179,7 +163,6 @@ class ORDER:
             send_mess = self._or_tem_mess.format(num, cause, or_id, ow, depot, or_ty, or_time, method)
             self.send(send_mess, group_name)
         except Exception as e:
-            # error().error('[Class:ORDER-DEF:format_mess_all]' + str(e))
             error().error(str(e))
             error().error(traceback.format_exc())
 
@@ -198,7 +181,6 @@ class ORDER:
             obj5.close()
             rows_all.extend(rows_ma)
             while True:
-                # global flag1
                 if self._flag1 == 0:
                     for k, v in dic.items():
                         count1, count2, count3 = 0, 0, 0
@@ -249,7 +231,6 @@ class ORDER:
                         len(his_rows_all)) + ' |')
                     if not os.path.exists(self._folderAll):
                         os.makedirs(self._folderAll)
-                    # os.chdir(self._folderAll)
                     day = time.strftime("%Y-%m-%d")
                     f = open(self._folderAll + 'log_all_%s.txt' % day, 'w+', encoding='utf-8')
                     f.write(str(his_rows_all))
@@ -260,7 +241,6 @@ class ORDER:
                         rows_all = check
                         self._flag1 = 0
                     else:
-                        # global ia
                         self._ia += 1
                         if self._ia == 1:  # first query
                             break
@@ -299,13 +279,8 @@ class DROP(ctypes.Structure):
 
 class FILE:
     def __init__(self):
-        # self._clock_kh = eval(deploy().get('Clock', 'clock_kh'))
-        # self._clock_all_out = eval(deploy().get('Clock', 'clock_all_out'))
         self._sf_jd_mess = deploy().get('ins', 'sf_jd_mess')
         self._ef_jd_mess = deploy().get('ins', 'ef_jd_mess')
-        # self._owner_name = deploy().items('Stas')
-        # self._center_name = deploy().items('Center')
-        # self._folderKh = deploy().get('Path', 'folderKh')
         self._folderKh = os.getcwd() + "\\formatLogs\\SanFangOutInFile\\"
         self._folder_out = os.getcwd() + "\\formatLogs\\ErFangOutFile\\"
         self._khTime = eval(deploy().get('Timer', 'khTime'))
@@ -336,106 +311,10 @@ class FILE:
             stg.set(pythoncom.TYMED_HGLOBAL, buf)
             test = ORDER()
             test.send(stg.data, group_name)
-            # w.OpenClipboard()
-            # w.EmptyClipboard()
-            # # stg.data type = bytes
-            # w.SetClipboardData(w.CF_HDROP, stg.data)
-            # w.CloseClipboard()
-            # # 'TXGuiFoundation'
-            # win = win32gui.FindWindow(None, group_name)
-            # time.sleep(1)
-            # win32gui.SendMessage(win, win32con.WM_PASTE, 0, 0)
-            # time.sleep(1)
-            # win32gui.SendMessage(win, win32con.WM_KEYDOWN, win32con.VK_RETURN, 0)
         except Exception as e:
             error().error(str(e))
             error().error(traceback.format_exc())
 
-    # def copy_file_to_clipboard(self, filename):
-    #     self.clip_files([os.path.abspath(filename)])
-
-    # def send_file(self, group_name):
-    #     log().info(self._info3)
-    #     # 'TXGuiFoundation'
-    #     win = win32gui.FindWindow(None, group_name)
-    #     time.sleep(1)
-    #     win32api.PostMessage(win, win32con.WM_PASTE, 0, 0)
-    #     time.sleep(1)
-    #     win32gui.SendMessage(win, win32con.WM_KEYDOWN, win32con.VK_RETURN, 0)
-
-    #     def format_mess_file(self, out_rec, out_feed, in_rec, in_feed, group_name, cut_name):
-    #         global tup_out_rec, feed_num_out, feed_id_out, rec_num_in, feed_num_in, rec_id_in, feed_id_in
-    #         if out_rec:
-    #             rec_out = list()
-    #             for i1 in out_rec:
-    #                 tup_out_rec = i1
-    #                 rec_out.extend(tup_out_rec[1:2])
-    #             rec_num_out = len(rec_out)
-    #             rec_id_out = ','.join(rec_out)
-    #         else:
-    #             rec_num_out = 0
-    #             rec_id_out = '未收到出库订单'
-    #         if out_feed:
-    #             feed_out = list()
-    #             for i2 in out_feed:
-    #                 tup_out_feed = i2
-    #                 feed_out.extend(tup_out_feed[1:2])
-    #                 # filename = tup_out_feed[2:3]
-    #             feed_num_out = len(feed_out)
-    #             feed_id_out = ','.join(feed_out)
-    #         else:
-    #             feed_num_out = 0
-    #             feed_id_out = '未收到wms出库关单反馈'
-    #         if in_rec:
-    #             rec_in = list()
-    #             for i3 in in_rec:
-    #                 tup_in_rec = i3
-    #                 rec_in.extend(tup_in_rec[1:2])
-    #             rec_num_in = len(rec_in)
-    #             rec_id_in = ','.join(rec_in)
-    #         else:
-    #             rec_num_in = 0
-    #             rec_id_in = '未收到入库订单'
-    #         if in_feed:
-    #             feed_in = list()
-    #             for i4 in in_feed:
-    #                 tup_in_feed = i4
-    #                 feed_in.extend(tup_in_feed[1:2])
-    #             feed_num_in = len(feed_in)
-    #             feed_id_in = ','.join(feed_in)
-    #         else:
-    #             feed_num_in = 0
-    #             feed_id_in = '未收到wms入库关单反馈'
-    #         s_time = time.strftime("%Y-%m-%d %H:%M:%S")
-    #         send_mess = '''赛飞当日截单统计:''' + '''
-    # 货主名称：''' + cut_name + '''
-    # 截止时间：''' + s_time + '''
-    #
-    # 出库截单统计：''' + '''
-    # 已收订单数量：''' + str(rec_num_out) + '''
-    # 反馈订单数量：''' + str(feed_num_out) + '''
-    # 已收订单组号：''' + rec_id_out + '''
-    # 反馈订单组号：''' + feed_id_out + '''
-    #
-    # 入库截单统计：''' + '''
-    # 已收订单数量：''' + str(rec_num_in) + '''
-    # 反馈订单数量：''' + str(feed_num_in) + '''
-    # 已收订单组号：''' + rec_id_in + '''
-    # 反馈订单组号：''' + feed_id_in + '''
-    #
-    #
-    # '''
-    #         if not os.path.exists(self._folderKh):
-    #             os.makedirs(self._folderKh)
-    #         # os.chdir(self._folderKh)
-    #         day = time.strftime("%Y-%m-%d")
-    #         f = open(self._folderKh + 'KH_JD_%s.txt' % day, 'a+', encoding='utf-8')
-    #         f.write(send_mess)
-    #         f.close()
-    #         log().info(send_mess)
-    #         send = ORDER()
-    #         send.send(send_mess, group_name)
-    #         log().info('Send messages to groups：{}'.format(group_name))
     def format_mess_file(self, rows_rec, rows_feed):
         try:
             owner_name = deploy().items('Stas')
@@ -481,22 +360,16 @@ class FILE:
                                                     str(feed_num_in), str(feed_num_out))
                 if not os.path.exists(self._folderKh):
                     os.makedirs(self._folderKh)
-                # os.chdir(self._folderKh)
                 group_li = eval(deploy().get('Stas', ow_name))
                 day = time.strftime("%Y-%m-%d")
-                # f = open(self._folderKh + '%s_%s.txt' % (ow_name, day), 'a+', encoding='utf-8')
-                # f.write(send_mess)
-                # f.close()
-                # excel
                 wb = Workbook()
                 ws = wb.active
                 ws.title = '截单单统计'
-                # Font(name='等线', size=24, italic=True, color=colors.RED, bold=True)
                 cell_font = Font(name='Microsoft YaHei UI', size=11, bold=True)  # italic 斜体 bold 加粗
                 order_font = Font(name='Consolas')
                 # cell_fill = PatternFill("solid", fgColor="5CACEE")
                 ws.append(self._title)
-                # ws.iter_rows() 遍历所有cell
+                # ws.iter_rows() all cell
                 col_max = len(self._title)
                 letter = self.num_column(col_max) + '1'
                 for row in ws["A1":letter]:  # <Cell 'sheet'.A1>
@@ -516,8 +389,6 @@ class FILE:
                 ws['J2'].font = order_font
                 for i in range(1, ws.max_column+1):
                     cell_col = self.num_column(i)
-                    # ws.row_dimensions[1].height = 40                  # modify cell height
-                    # width = self.len_byte(self._title[i-1])
                     ws.column_dimensions[cell_col].width = 20        # modify cell wide
                 for i1 in range(len(rec_in)):
                     ws.cell(i1 + 2, 4, value=rec_in[i1]).font = order_font
@@ -533,16 +404,12 @@ class FILE:
                     send = ORDER()
                     send.send(send_mess, group_li[1])
                     day = time.strftime("%Y-%m-%d")
-                    # file_name = self._folderKh + '%s_%s.txt' % (ow_name, day)
                     file_name = self._folderKh + '%s_%s.xlsx' % (ow_name, day)
-                    # self.copy_file_to_clipboard(file_name)
                     check = []
                     if rows_rec == check and rows_feed == check:
-                        # if in_rec == check and in_feed == check and out_rec == check and out_feed == check:
                         pass
                     else:
                         self.clip_files([os.path.abspath(file_name)], group_li[1])
-                        # self.send_file(group_li[1])
         except Exception as e:
             error().error(str(e))
             error().error(traceback.format_exc())
@@ -595,14 +462,7 @@ class FILE:
                             wb.save(self._folder_out + "%s_%s.xlsx" % (cen_name, day))
                             wb.close()
                             file_name = self._folder_out + '%s_%s.xlsx' % (cen_name, day)
-                            # self.copy_file_to_clipboard(file_name)
                             self.clip_files([os.path.abspath(file_name)], group_li[1])
-                            # check = []
-                            # if rows_rec == check and rows_feed == check:
-                            #     # if in_rec == check and in_feed == check and out_rec == check and out_feed == check:
-                            #     pass
-                            # else:
-                            # self.send_file(group_li[1])
                 else:
                     log().info('| FILE CLASS | ALL MESS FILE FUNCTION |Message：' + cen_code + '：No query results |')
         except Exception as e:
@@ -636,50 +496,11 @@ class FILE:
             length = len(str(value))
         return int(length)
 
-    # def query_kh(self):
-    #     try:
-    #         log().info('KH：Run query task')
-    #         create_time = time.strftime("%Y-%m-%d 00:00:01")
-    #         obj4 = Oracle()
-    #         out_rec = obj4.execute_sql(self._sql1.format(create_time))
-    #         out_feed = obj4.execute_sql(self._sql2.format(create_time))
-    #         in_rec = obj4.execute_sql(self._sql3.format(create_time))
-    #         in_feed = obj4.execute_sql(self._sql4.format(create_time))
-    #         obj4.close()
-    #         # This function can also be refined into a flexible configuration
-    #         global owner_name, group1
-    #         if out_rec:
-    #             owner_name = statistics[0][0]
-    #             group1 = statistics[0][1]
-    #         elif out_feed:
-    #             owner_name = statistics[0][0]
-    #             group1 = statistics[0][1]
-    #         elif in_rec:
-    #             owner_name = statistics[0][0]
-    #             group1 = statistics[0][1]
-    #         elif in_feed:
-    #             owner_name = statistics[0][0]
-    #             group1 = statistics[0][1]
-    #         log().info('[{}] [{}] [{}] [{}] [{}] [{}]'.format(out_rec, out_feed, in_rec, in_feed, group1, owner_name))
-    #         self.format_mess_file(out_rec, out_feed, in_rec, in_feed, group1, owner_name)
-    #         day = time.strftime("%Y-%m-%d")
-    #         file_name = self._folderKh + 'KH_JD_%s.txt' % day
-    #         self.copy_file_to_clipboard(file_name)
-    #         check = []
-    #         if in_rec == check and in_feed == check and out_rec == check and out_feed == check:
-    #             log().info('KH：Did not query any data,no need to perform a send task')
-    #         else:
-    #             self.send_file(group1)
-    #     except Exception as e:
-    #         log().error(str(e))
-    #         log().error(str(traceback.format_exc()))
     def query_kh(self):
         obj4 = Oracle()
         rows_rec = obj4.execute_sql(self._sql_all_rec)
         rows_feed = obj4.execute_sql(self._sql_all_feed)
         self.format_mess_file(rows_rec, rows_feed)
-        # rows_xj = obj4.execute_sql(self._sql_xj)
-        # self.format_mess_xj(rows_xj)
 
     def query_all_out(self, center_code):
         sql_ef_out = deploy().get('SQL', 'sql_xj')
@@ -720,27 +541,20 @@ class FILE:
                         '| FILE CLASS | TIMER KH FUNCTION | Message：'
                         'All ef owner center {} timer {} Do not perform tasks during non-working hours |'.format(
                             dic1, i1))
-        # global timer2
-        # timer2 = Timer(self._khTime, self.timer_kh)
-        # timer2.start()
 
 
 class SH:
     def __init__(self):
-        # self._clock_erp = eval(deploy().get('Clock', 'clock_erp'))
-        # self._clock_erp = deploy().items('Clock', 'clock_erp')
         self._sh_sn_mess = deploy().get('ins', 'sh_sn_mess')
         self._erp_mess = deploy().get('ins', 'erp_mess')
         self._ots1 = deploy().get('ins', 'ots1')
         self._ots2 = deploy().get('ins', 'ots2')
         self._erpTime = eval(deploy().get('Timer', 'erpTime'))
         self._hrTime = eval(deploy().get('Timer', 'hrTime'))
-        # self._folderErp = deploy().get('Path', 'folderErp')
         self._folderErp = os.getcwd() + "\\formatLogs\\erpLog\\"
         self._mess = '辉瑞卡单，请及时处理'
         self._sql_sh_sn = deploy().get('SQL', 'sql_sh_sn')
         self._name = eval(deploy().get('Name', '上海SAVE运维主管'))
-        # self._name_li = deploy().items('Name')
         self._gy_group_name = eval(deploy().get('Sinopharm', 'GYWL'))
 
     def timer_erp(self):
@@ -750,8 +564,6 @@ class SH:
             log().info('| SH CLASS | TIMER ERP FUNCTION | Message：ERP task do not perform tasks on weekends |')
         else:
             now = datetime.datetime.now()
-            # clock0 = eval(self._clock_erp[0][1])
-            # for i in clock0:
             for i in clock_erp:
                 send_time = time.strftime("%Y-%m-%d " + i)
                 range_time = datetime.datetime.strptime(send_time, "%Y-%m-%d %H:%M:%S")
@@ -761,9 +573,6 @@ class SH:
                     self.erp(i)
                 else:
                     log().info('| SH CLASS | TIMER ERP FUNCTION | Message：ERP task do not perform send task |')
-        # global timer3
-        # timer3 = Timer(self._erpTime, self.timer_erp)
-        # timer3.start()
 
     def timer_hr(self):
         range_time1 = datetime.datetime.now()
@@ -774,9 +583,6 @@ class SH:
             now = datetime.datetime.now()
             if range_time1 <= now < range_time1 + datetime.timedelta(seconds=1):
                 self.check_feed()
-        # global timer4
-        # timer4 = Timer(self._hrTime, self.timer_hr)
-        # timer4.start()
 
     def format_sh_sn(self, sh_num, sn_num):
         try:
@@ -789,7 +595,6 @@ class SH:
                 '| SH CLASS | FORMAT SH SN FUNCTION | Message：上海出库 ' + str(sh_num) + ' 枢纽出库 ' + str(sn_num) + ' |')
             if not os.path.exists(self._folderErp):
                 os.makedirs(self._folderErp)
-            # os.chdir(self._folderErp)
             file_now = time.strftime("%Y-%m-%d")
             f = open(self._folderErp + 'Check_Order%s.txt' % file_now, 'w+', encoding='utf-8')
             f.write(mess)
@@ -967,20 +772,6 @@ class Oracle:
             return sql_rows
 
 
-# # Do not use
-# class EXEC(object):
-#     def __init__(self, thread):
-#         self.thread_handle = thread_handle
-#         print('thread_handle----', self.thread_handle)
-#         self.thread_handle = thread
-#
-#     def __del__(self):
-#         global gfa
-#         gfa = 0
-#         log().info('Thread termination{}'.format(gfa))
-#         self.thread_handle.cancel()
-
-
 class Comp(object):
     def __init__(self, tor, message):
         self._comp_id = "wwca9e177a69dcdecc"
@@ -1025,46 +816,6 @@ class Comp(object):
                 'Sending a successful company WeChat | ' + 'sendto：' + self._tor + ';;mess：' + self._message)
 
 
-# # do not use
-# def restore(msg, thread_count):
-#     log().info('Restore MSG [{}]'.format(msg))
-#     now = datetime.datetime.now()
-#     sendto = '@all'
-#     mess0 = '''Error：autoThread.py
-# Mess：Thread stopped abnormally
-# Current：number of threads {}
-# Actually：number of threads 7
-# Details：{}
-# Time：{}'''
-#     mess1 = '''Mess：Start executing thread recovery tasks
-# Time：{}'''
-#     mess2 = '''Mess：Thread recovery succeeded
-# Time：{}'''
-#     mess3 = '''Error：Thread recovery failed
-# Time：{}'''
-#     if thread_count < 7 and 'ORA-' in msg:
-#         log().info('Determine that the thread is in an abnormal situation and start performing the recovery task.')
-#         obj0 = Comp(sendto, mess0.format(thread_count, msg, now))
-#         obj0.post()
-#         time.sleep(1)
-#         obj1 = Comp(sendto, mess1.format(datetime.datetime.now()))
-#         obj1.post()
-#         try:
-#             order = ORDER()
-#             thread1 = Thread(target=order.timer_all, name='OrderAll')
-#             thread1.start()
-#             thread1.join()
-#         except Exception as e:
-#             log().error('重启线程异常情况：{}'.format(str(e)))
-#         else:
-#             count = threading.active_count()
-#             if count == 7:
-#                 obj2 = Comp(sendto, mess2.format(datetime.datetime.now()))
-#                 obj2.post()
-#             else:
-#                 obj3 = Comp(sendto, mess3.format(datetime.datetime.now()))
-#                 obj3.post()
-
 class CHECK:
     def __init__(self):
         self._check_c = 0
@@ -1095,17 +846,11 @@ Time：{}'''
         except Exception as e:
             error().error(str(e))
             error().error(traceback.format_exc())
-        # global timer5
-        # timer5 = Timer(check_time, self.check_thread)
-        # timer5.start()
 
 
 def clean_screen():
     os.system('cls')
     log().info('| ClEAN SCREEN FUNCTION | Message：Clear screen task execution completed |')
-    # global timer6
-    # timer6 = Timer(clean_time, clean_screen)
-    # timer6.start()
 
 
 class ALARM:
@@ -1195,7 +940,6 @@ class ALARM:
                                     nickname = queue_li[1]
                                     group_name = queue_li[2]
                                     log().info('| ALARM CLASS | FORMAT MESS FUNCTION | Message：' + mess + ' |')
-                                    # self.element(url_mq, gra_user, gra_passwd, error_queue, group_name)
                                     self.element(url_mq, gra_user, gra_passwd, group_name)
                                     self.alarm_send(nickname, group_name)
                                     self.alarm_send(mess, group_name)
@@ -1222,13 +966,8 @@ class ALARM:
     # QUERY THE ZABBIX PROBLEM VIEW
     def query_alarm(self):
         obj1 = Mysql()
-        # sql = 'SELECT * FROM test.t1'
         rows = obj1.execute_sql(self._alarm_sql)
-        # log().info('Abnormal result：' + str(rows))
         self.format_mess(rows)
-        # global timer7
-        # timer7 = Timer(alarm_time, query_alarm)
-        # timer7.start()
 
 
 # CONNECT MYSQL METHOD
@@ -1329,7 +1068,6 @@ def error():
 
 
 def main():
-    # sem.acquire()
     global gra_user, gra_passwd, url_mq, tem_mess, alarm_path, py_name, user, password, ip, name, mutex
     file = shelve.open("gywl")
     gra_user = file['grafana']['user']
@@ -1357,22 +1095,6 @@ def main():
     check_th = CHECK()
     alarm_q = ALARM()
     order.query_his()
-    # thread_list = list()
-    # thread1 = Thread(target=order.timer_all, name='OrderAll')
-    # thread2 = Thread(target=file_kh.timer_kh, name='KuaHua')
-    # thread3 = Thread(target=sh_save.timer_erp, name='ERP')
-    # thread4 = Thread(target=sh_save.timer_hr, name='HuiRui')
-    # thread5 = Thread(target=check_thread, name='CheckThread')
-    # thread6 = Thread(target=clean_screen, name='CleanScreen')
-    # thread_list.append(thread1)
-    # thread_list.append(thread2)
-    # thread_list.append(thread3)
-    # thread_list.append(thread4)
-    # thread_list.append(thread5)
-    # thread_list.append(thread6)
-    # for s in thread_list:
-    #     s.start()
-    #     s.join()
     schedule.every(all_time).minutes.do(order.timer_all)
     schedule.every(kh_time).minutes.do(file_kh.timer_kh)
     schedule.every(erp_time).minutes.do(sh_save.timer_erp)
@@ -1383,15 +1105,6 @@ def main():
     while True:
         schedule.run_pending()
         time.sleep(1)
-    # schedule = sched.scheduler(time.time, time.sleep)     # Thread alive
-    # schedule.enter(1, 0, order.timer_all)
-    # schedule.enter(1, 1, file_kh.timer_kh)
-    # schedule.enter(1, 2, sh_save.timer_erp)
-    # schedule.enter(1, 3, sh_save.timer_hr)
-    # schedule.enter(1, 4, alarm_q.query_alarm)
-    # schedule.enter(1, 5, clean_screen)
-    # schedule.enter(1, 6, check_th.check_thread)
-    # schedule.run()
 
 
 if __name__ == '__main__':
