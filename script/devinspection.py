@@ -1,6 +1,5 @@
 # -*- coding:utf-8 -*-
 # author：walker
-# time；2019-07-14/09-08
 
 import time
 import datetime

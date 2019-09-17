@@ -1,6 +1,5 @@
 # -*- coding:utf-8 -*-
 # author： walker
-# time：2019-09-10
 
 import cx_Oracle
 import win32gui
