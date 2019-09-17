@@ -719,10 +719,13 @@ class Oracle:
             self.cursor = self.conn.cursor()
             self.isClose = False
         except Exception as e:
-            error().error("Oracle connect error![MSG={},USER={},PASSWORD={},IP={},NAME={}]".format(str(e), self.user,
-                                                                                                   self.password,
-                                                                                                   self.ip,
-                                                                                                   self.name))
+            error().error("| ORACLE CLASS | CONNECT FUNCTION | Message："
+                          "Oracle connect error![MSG={},USER={},PASSWORD={},IP={},NAME={}] |".format(str(e), self.user,
+                                                                                                     self.password,
+                                                                                                     self.ip,
+                                                                                                     self.name))
+            obj1 = Comp('@all', traceback.format_exc())
+            obj1.post()
             self.cursor = None
             self.isClose = True
         return self.cursor
@@ -763,10 +766,11 @@ class Oracle:
                 global sql_rows
                 sql_rows = self.cursor.fetchall()
         except Exception as e:
-            error().error("Execute sql error![MSG={},SQL={}]".format(str(e), sql))
-            # check_thread(str(e))
+            error().error("| ORACLE CLASS | EXECUTE SQL FUNCTION | Message："
+                          "Execute sql error![MSG={},SQL={}] |".format(str(e), sql))
+            obj1 = Comp('@all', traceback.format_exc())
+            obj1.post()
             return ''
-            # return None
         else:
             return sql_rows
 
@@ -994,7 +998,7 @@ class Mysql:
             self.cursor = self.conn.cursor()
             self.isClose = False
         except Exception as e:
-            log().error(
+            error().error(
                 "| MYSQL CLASS | CONNECT FUNCTION | Message ："
                 "Mysql connect error![MSG={},USER={},PASSWORD={},IP={},DB={}]".format(
                     str(e),
@@ -1002,6 +1006,9 @@ class Mysql:
                     '***',
                     self._host,
                     self._db))
+            error().error(traceback.format_exc())
+            obj1 = Comp('@all', traceback.format_exc())
+            obj1.post()
             self.cursor = None
             self.isClose = True
         return self.cursor
@@ -1042,12 +1049,13 @@ class Mysql:
                 global sql_rows
                 sql_rows = self.cursor.fetchall()
         except Exception as e:
-            log().error(
+            error().error(
                 "| MYSQL CLASS | EXECUTE SQL FUNCTION | Message："
                 "Execute sql error![MSG={},SQL={}]".format(str(e), sql) + ' |')
-            # check_thread(str(e))
+            error().error(traceback.format_exc())
+            obj1 = Comp('@all', traceback.format_exc())
+            obj1.post()
             return ''
-            # return None
         else:
             return sql_rows
 
