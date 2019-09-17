@@ -88,9 +88,9 @@ README
 >>6、请注意！全局配置中0始终代表True，1代表False。
 
 ***Shelve conf***
->>gywl.bak、gywl.dat、gywl.dir该配置文件属于二进制文件，包含以下配置：
->>1、Oracle IP、Name、User、Password
->>2、Mysql IP、Port、User、Password、DB、Charset
+>>gywl.bak、gywl.dat、gywl.dir该配置文件属于二进制文件，包含以下配置：  
+>>1、Oracle IP、Name、User、Password  
+>>2、Mysql IP、Port、User、Password、DB、Charset  
   
   
 **注意事项1：若对源码进行修改，修改后用pyinstaller工具打包py文件。**  
