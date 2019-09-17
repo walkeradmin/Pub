@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="08980bf8-b570-4e3a-ba8e-233837640c00" name="Default Changelist" comment="update ins">
+    <list default="true" id="08980bf8-b570-4e3a-ba8e-233837640c00" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Pub.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Pub.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dispic/Grafana1.png" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,46 +17,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Basic.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27086">
-              <caret line="934" selection-start-line="934" selection-end-line="934" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/autoThread.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="12871">
-              <caret line="811" column="46" selection-start-line="811" selection-start-column="46" selection-end-line="811" selection-end-column="46" />
-              <folding>
-                <element signature="e#71#87#0" expanded="true" />
-                <element signature="e#453#473#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/inspectionthread.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1909">
-              <caret line="329" selection-start-line="329" selection-end-line="329" />
-              <folding>
-                <element signature="e#58#69#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="472">
-                <caret line="37" column="25" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="25" />
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="530">
+                <caret line="108" column="83" selection-start-line="108" selection-start-column="83" selection-end-line="108" selection-end-column="83" />
               </first_editor>
               <second_editor />
             </state>
@@ -70,6 +37,14 @@
         <option value="Python Script" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>1, 2, 3,4,5</find>
+      <find>data_train</find>
+      <find>1</find>
+      <find>move_to_element</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -87,23 +62,25 @@
         <option value="$PROJECT_DIR$/Basic.py" />
         <option value="$PROJECT_DIR$/inspectionthread.py" />
         <option value="$PROJECT_DIR$/autoThread.py" />
+        <option value="$PROJECT_DIR$/examples/inspectionthread.py" />
+        <option value="$PROJECT_DIR$/examples/logformat.py" />
+        <option value="$PROJECT_DIR$/examples/123.py" />
+        <option value="$PROJECT_DIR$/examples/ml.py" />
+        <option value="$PROJECT_DIR$/../AIops/config.py" />
+        <option value="$PROJECT_DIR$/Titanic.py" />
+        <option value="$PROJECT_DIR$/matplot.py" />
+        <option value="$PROJECT_DIR$/plotlyT.py" />
+        <option value="$PROJECT_DIR$/bash.sh" />
+        <option value="$PROJECT_DIR$/logformat.py" />
+        <option value="$PROJECT_DIR$/conftest.py" />
+        <option value="$PROJECT_DIR$/instest.py" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/Pub.iml" />
-        <option value="$PROJECT_DIR$/.idea/misc.xml" />
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-        <option value="$PROJECT_DIR$/.idea/modules.xml" />
-      </list>
-    </option>
-  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-12" />
-    <option name="y" value="-12" />
+    <option name="x" value="-94" />
+    <option name="y" value="406" />
     <option name="width" value="2800" />
     <option name="height" value="1840" />
   </component>
@@ -120,6 +97,11 @@
               <item name="Pub" type="b2602c69:ProjectViewProjectNode" />
               <item name="Pub" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Pub" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Pub" type="462c0819:PsiDirectoryNode" />
+              <item name="Dispic" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -131,12 +113,13 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../AIops" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="SDKs" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -149,6 +132,127 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager" selected="Python.instest">
+    <configuration name="Titanic" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Pub" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Titanic.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="conftest" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Pub" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/conftest.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="instest" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Pub" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/instest.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="matplot" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Pub" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="D:\Work\MyProject\Pub\plotlyT.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="plotlyT" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Pub" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/plotlyT.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.instest" />
+        <item itemvalue="Python.conftest" />
+        <item itemvalue="Python.plotlyT" />
+        <item itemvalue="Python.matplot" />
+        <item itemvalue="Python.Titanic" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -163,217 +267,38 @@
       <workItem from="1564625824181" duration="1337000" />
       <workItem from="1564727709504" duration="2175000" />
       <workItem from="1564975248569" duration="10547000" />
-      <workItem from="1565056675704" duration="3362000" />
-    </task>
-    <task id="LOCAL-00001" summary="first test commit">
-      <created>1564625948456</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1564625948456</updated>
-    </task>
-    <task id="LOCAL-00002" summary="test">
-      <created>1564626579019</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1564626579019</updated>
-    </task>
-    <task id="LOCAL-00003" summary="second commit">
-      <created>1564728380024</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1564728380024</updated>
-    </task>
-    <task id="LOCAL-00004" summary="autoSend and autoInspection">
-      <created>1564975663499</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1564975663499</updated>
-    </task>
-    <task id="LOCAL-00005" summary="conf">
-      <created>1564980793168</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1564980793168</updated>
-    </task>
-    <task id="LOCAL-00006" summary="update">
-      <created>1564984933241</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1564984933241</updated>
-    </task>
-    <task id="LOCAL-00007" summary="update">
-      <created>1564985010418</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1564985010418</updated>
-    </task>
-    <task id="LOCAL-00008" summary="update">
-      <created>1564986901963</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1564986901963</updated>
-    </task>
-    <task id="LOCAL-00009" summary="update ins">
-      <created>1564988211693</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1564988211693</updated>
-    </task>
-    <task id="LOCAL-00010" summary="update readme">
-      <created>1564994202656</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1564994202656</updated>
-    </task>
-    <task id="LOCAL-00011" summary="update readme">
-      <created>1564994353253</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1564994353253</updated>
-    </task>
-    <task id="LOCAL-00012" summary="commit readme">
-      <created>1564994485246</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1564994485246</updated>
-    </task>
-    <task id="LOCAL-00013" summary="update">
-      <created>1564995159083</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1564995159083</updated>
-    </task>
-    <task id="LOCAL-00014" summary="UPDATE">
-      <created>1564995312667</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1564995312667</updated>
-    </task>
-    <task id="LOCAL-00015" summary="update">
-      <created>1564995421907</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1564995421907</updated>
-    </task>
-    <task id="LOCAL-00016" summary="update">
-      <created>1564995794151</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1564995794151</updated>
-    </task>
-    <task id="LOCAL-00017" summary="update">
-      <created>1564996101727</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1564996101727</updated>
-    </task>
-    <task id="LOCAL-00018" summary="update">
-      <created>1564996501740</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1564996501740</updated>
-    </task>
-    <task id="LOCAL-00019" summary="update">
-      <created>1564996586895</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1564996586895</updated>
-    </task>
-    <task id="LOCAL-00020" summary="update">
-      <created>1564996790718</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1564996790718</updated>
-    </task>
-    <task id="LOCAL-00021" summary="update">
-      <created>1564997030830</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1564997030830</updated>
-    </task>
-    <task id="LOCAL-00022" summary="update">
-      <created>1564997113790</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1564997113790</updated>
-    </task>
-    <task id="LOCAL-00023" summary="update">
-      <created>1564997190940</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1564997190940</updated>
-    </task>
-    <task id="LOCAL-00024" summary="update">
-      <created>1564997620176</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1564997620176</updated>
-    </task>
-    <task id="LOCAL-00025" summary="update">
-      <created>1564997823396</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1564997823396</updated>
-    </task>
-    <task id="LOCAL-00026" summary="update">
-      <created>1565056824835</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1565056824835</updated>
-    </task>
-    <task id="LOCAL-00027" summary="update">
-      <created>1565057012064</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1565057012064</updated>
-    </task>
-    <task id="LOCAL-00028" summary="update">
-      <created>1565057319534</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1565057319534</updated>
-    </task>
-    <task id="LOCAL-00029" summary="update">
-      <created>1565058042192</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1565058042192</updated>
-    </task>
-    <task id="LOCAL-00030" summary="update">
-      <created>1565058607770</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1565058607770</updated>
+      <workItem from="1565056675704" duration="15400000" />
+      <workItem from="1565165644357" duration="2713000" />
+      <workItem from="1565618913207" duration="2835000" />
+      <workItem from="1565743038384" duration="4347000" />
+      <workItem from="1566183952625" duration="598000" />
+      <workItem from="1566357881694" duration="717000" />
+      <workItem from="1566364164276" duration="5147000" />
+      <workItem from="1566372269615" duration="2293000" />
+      <workItem from="1566437074340" duration="7182000" />
+      <workItem from="1566520879211" duration="1843000" />
+      <workItem from="1566783430118" duration="2059000" />
+      <workItem from="1566785792176" duration="9477000" />
+      <workItem from="1566885782751" duration="1662000" />
+      <workItem from="1566961624017" duration="2169000" />
+      <workItem from="1567042875358" duration="1976000" />
+      <workItem from="1567129833827" duration="598000" />
+      <workItem from="1567159554319" duration="842000" />
+      <workItem from="1567232298120" duration="276000" />
+      <workItem from="1567232595675" duration="2122000" />
+      <workItem from="1567573826817" duration="748000" />
+      <workItem from="1567579310420" duration="120000" />
+      <workItem from="1567579497286" duration="1806000" />
+      <workItem from="1567645000992" duration="2018000" />
+      <workItem from="1567731056238" duration="1243000" />
+      <workItem from="1567922682104" duration="6343000" />
+      <workItem from="1567990440315" duration="9872000" />
+      <workItem from="1568076591229" duration="249000" />
+      <workItem from="1568076883787" duration="608000" />
+      <workItem from="1568162327702" duration="2816000" />
+      <workItem from="1568249024216" duration="7560000" />
+      <workItem from="1568532864474" duration="682000" />
+      <workItem from="1568594705375" duration="2119000" />
     </task>
     <task id="LOCAL-00031" summary="update">
       <created>1565058770235</created>
@@ -382,16 +307,352 @@
       <option name="project" value="LOCAL" />
       <updated>1565058770235</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="update">
+      <created>1565068018410</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1565068018410</updated>
+    </task>
+    <task id="LOCAL-00033" summary="update">
+      <created>1565071378283</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1565071378283</updated>
+    </task>
+    <task id="LOCAL-00034" summary="update">
+      <created>1565071567326</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1565071567326</updated>
+    </task>
+    <task id="LOCAL-00035" summary="update">
+      <created>1565071839532</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1565071839532</updated>
+    </task>
+    <task id="LOCAL-00036" summary="update">
+      <created>1565072092703</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1565072092703</updated>
+    </task>
+    <task id="LOCAL-00037" summary="update">
+      <created>1565076564529</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1565076564529</updated>
+    </task>
+    <task id="LOCAL-00038" summary="update">
+      <created>1565076645179</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1565076645179</updated>
+    </task>
+    <task id="LOCAL-00039" summary="update">
+      <created>1565078060561</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1565078060561</updated>
+    </task>
+    <task id="LOCAL-00040" summary="update">
+      <created>1565078078340</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1565078078340</updated>
+    </task>
+    <task id="LOCAL-00041" summary="update">
+      <created>1565080500014</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1565080500014</updated>
+    </task>
+    <task id="LOCAL-00042" summary="update">
+      <created>1565081355277</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1565081355278</updated>
+    </task>
+    <task id="LOCAL-00043" summary="update">
+      <created>1565082068297</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1565082068297</updated>
+    </task>
+    <task id="LOCAL-00044" summary="update">
+      <created>1566357962507</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1566357962508</updated>
+    </task>
+    <task id="LOCAL-00045" summary="2019-09-09 update">
+      <created>1568003030802</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1568003030802</updated>
+    </task>
+    <task id="LOCAL-00046" summary="2019-09-09 update">
+      <created>1568003696064</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1568003696064</updated>
+    </task>
+    <task id="LOCAL-00047" summary="2019-09-09 update">
+      <created>1568010056251</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1568010056251</updated>
+    </task>
+    <task id="LOCAL-00048" summary="2019-09-09 update">
+      <created>1568010432395</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1568010432395</updated>
+    </task>
+    <task id="LOCAL-00049" summary="2019-09-09 update">
+      <created>1568010545426</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1568010545426</updated>
+    </task>
+    <task id="LOCAL-00050" summary="2019-09-09 update">
+      <created>1568010714062</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1568010714063</updated>
+    </task>
+    <task id="LOCAL-00051" summary="2019-09-09 update">
+      <created>1568010917713</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1568010917713</updated>
+    </task>
+    <task id="LOCAL-00052" summary="2019-09-09 update">
+      <created>1568011241455</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1568011241455</updated>
+    </task>
+    <task id="LOCAL-00053" summary="2019-09-09 update">
+      <created>1568011339518</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1568011339519</updated>
+    </task>
+    <task id="LOCAL-00054" summary="2019-09-09 update">
+      <created>1568011471631</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1568011471631</updated>
+    </task>
+    <task id="LOCAL-00055" summary="2019-09-09 update">
+      <created>1568011658582</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1568011658582</updated>
+    </task>
+    <task id="LOCAL-00056" summary="2019-09-09 update">
+      <created>1568011760043</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1568011760043</updated>
+    </task>
+    <task id="LOCAL-00057" summary="2019-09-09 update">
+      <created>1568011975547</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1568011975547</updated>
+    </task>
+    <task id="LOCAL-00058" summary="update">
+      <created>1568169909653</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1568169909654</updated>
+    </task>
+    <task id="LOCAL-00059" summary="update">
+      <created>1568170249020</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1568170249020</updated>
+    </task>
+    <task id="LOCAL-00060" summary="update">
+      <created>1568171444751</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1568171444751</updated>
+    </task>
+    <task id="LOCAL-00061" summary="update">
+      <created>1568171527557</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1568171527557</updated>
+    </task>
+    <task id="LOCAL-00062" summary="update">
+      <created>1568257162645</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1568257162646</updated>
+    </task>
+    <task id="LOCAL-00063" summary="update">
+      <created>1568257242546</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1568257242547</updated>
+    </task>
+    <task id="LOCAL-00064" summary="update">
+      <created>1568257266928</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1568257266928</updated>
+    </task>
+    <task id="LOCAL-00065" summary="update">
+      <created>1568258580367</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1568258580367</updated>
+    </task>
+    <task id="LOCAL-00066" summary="update">
+      <created>1568258857897</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1568258857897</updated>
+    </task>
+    <task id="LOCAL-00067" summary="update">
+      <created>1568262695929</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1568262695929</updated>
+    </task>
+    <task id="LOCAL-00068" summary="update">
+      <created>1568262725984</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1568262725985</updated>
+    </task>
+    <task id="LOCAL-00069" summary="update">
+      <created>1568262896879</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1568262896879</updated>
+    </task>
+    <task id="LOCAL-00070" summary="update">
+      <created>1568272543694</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1568272543694</updated>
+    </task>
+    <task id="LOCAL-00071" summary="update">
+      <created>1568274669870</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1568274669870</updated>
+    </task>
+    <task id="LOCAL-00072" summary="update">
+      <created>1568275981750</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1568275981750</updated>
+    </task>
+    <task id="LOCAL-00073" summary="update">
+      <created>1568276072621</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1568276072621</updated>
+    </task>
+    <task id="LOCAL-00074" summary="update">
+      <created>1568596011973</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1568596011974</updated>
+    </task>
+    <task id="LOCAL-00075" summary="update">
+      <created>1568624309554</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1568624309554</updated>
+    </task>
+    <task id="LOCAL-00076" summary="update">
+      <created>1568624390353</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1568624390353</updated>
+    </task>
+    <task id="LOCAL-00077" summary="update">
+      <created>1568624505390</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1568624505390</updated>
+    </task>
+    <task id="LOCAL-00078" summary="update">
+      <created>1568624720332</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1568624720332</updated>
+    </task>
+    <task id="LOCAL-00079" summary="update">
+      <created>1568624778953</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1568624778953</updated>
+    </task>
+    <option name="localTasksCounter" value="80" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17421000" />
+    <option name="totallyTimeSpent" value="114499000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="-6" width="1513" height="973" extended-state="6" />
+    <frame x="-6" y="-6" width="1513" height="973" extended-state="7" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14776632" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13608247" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -400,7 +661,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49896908" weight="0.60926366" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -409,7 +670,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32897863" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5010309" side_tool="true" weight="0.31947744" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -418,7 +679,7 @@
       <window_info anchor="right" id="Maven" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="SciView" order="8" />
+      <window_info anchor="right" id="SciView" order="8" weight="0.52714777" />
       <window_info anchor="right" id="Database" order="9" />
     </layout>
   </component>
@@ -435,8 +696,18 @@
     <MESSAGE value="update readme" />
     <MESSAGE value="commit readme" />
     <MESSAGE value="UPDATE" />
+    <MESSAGE value="2019-09-09 update" />
     <MESSAGE value="update" />
     <option name="LAST_COMMIT_MESSAGE" value="update" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Pub$matplot.coverage" NAME="matplot Coverage Results" MODIFIED="1566802216101" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Pub$instest.coverage" NAME="instest Coverage Results" MODIFIED="1567927996957" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Pub$conftest.coverage" NAME="conftest Coverage Results" MODIFIED="1567927994287" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Pub$ml.coverage" NAME="ml Coverage Results" MODIFIED="1565621718628" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples" />
+    <SUITE FILE_PATH="coverage/Pub$Titanic.coverage" NAME="Titanic Coverage Results" MODIFIED="1566797976299" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Pub$123.coverage" NAME="123 Coverage Results" MODIFIED="1565167854277" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples" />
+    <SUITE FILE_PATH="coverage/Pub$plotlyT.coverage" NAME="plotlyT Coverage Results" MODIFIED="1566962979765" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/test.py" />
@@ -454,39 +725,127 @@
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Dispic/query_sendqq_log.png" />
-    <entry file="file://$PROJECT_DIR$/Basic.py">
+    <entry file="file://$PROJECT_DIR$/Basic.py" />
+    <entry file="file://$PROJECT_DIR$/inspectionthread.py" />
+    <entry file="file://$PROJECT_DIR$/autoThread.py" />
+    <entry file="file://$PROJECT_DIR$/examples/123.py" />
+    <entry file="file://$PROJECT_DIR$/examples/inspectionthread.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27086">
-          <caret line="934" selection-start-line="934" selection-end-line="934" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inspectionthread.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1909">
-          <caret line="329" selection-start-line="329" selection-end-line="329" />
+        <state relative-caret-position="386">
+          <caret line="173" column="26" selection-start-line="173" selection-start-column="21" selection-end-line="173" selection-end-column="26" />
           <folding>
             <element signature="e#58#69#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/autoThread.py">
+    <entry file="file://$PROJECT_DIR$/examples/logformat.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12871">
-          <caret line="811" column="46" selection-start-line="811" selection-start-column="46" selection-end-line="811" selection-end-column="46" />
+        <state relative-caret-position="232">
+          <caret line="13" column="20" lean-forward="true" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/SoftWare/Python/Lib/site-packages/pandas/plotting/_matplotlib/hist.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="150" selection-start-line="150" selection-end-line="150" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AIops/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="12" column="4" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/SoftWare/Python/Lib/copy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="273" selection-start-line="273" selection-end-line="273" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/SoftWare/Python/Lib/site-packages/IPython/core/display.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="693" selection-start-line="693" selection-end-line="693" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bash.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/ml.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1305">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/autoThread.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23142">
+          <caret line="813" column="10" lean-forward="true" selection-start-line="813" selection-start-column="10" selection-end-line="813" selection-end-column="10" />
           <folding>
             <element signature="e#71#87#0" expanded="true" />
-            <element signature="e#453#473#0" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Titanic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plotlyT.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1073">
+          <caret line="45" column="16" selection-start-line="45" selection-start-column="16" selection-end-line="45" selection-end-column="16" />
+          <folding>
+            <element signature="e#399#426#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conftest.py" />
+    <entry file="file://$PROJECT_DIR$/logformat.py" />
+    <entry file="file://$PROJECT_DIR$/instest.py" />
+    <entry file="file://$PROJECT_DIR$/LICENSE">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/autoThread.spec">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-435" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dispic/DevopConf1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dispic/DevopConf5.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dispic/DevopConf4.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dispic/DevopConf3.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dispic/DevopConf2.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="472">
-            <caret line="37" column="25" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="25" />
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="530">
+            <caret line="108" column="83" selection-start-line="108" selection-start-column="83" selection-end-line="108" selection-end-column="83" />
           </first_editor>
           <second_editor />
         </state>
