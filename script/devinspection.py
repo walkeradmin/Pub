@@ -1,7 +1,6 @@
 # -*- coding:utf-8 -*-
 # author：walker
 # time；2019-07-14/09-08
-# update：find_element
 
 import time
 import datetime
@@ -69,13 +68,7 @@ def no_browser():
     options.add_argument('--headless')                               # No visual page available
     options.add_argument('--disable-gpu')                            # Avoid bugs
     options.add_argument('--log-level=3')                            # log level
-    # options.add_argument("--start-maximized")                      # not available
-    # options.add_argument('--hide-scrollbars')                      # Hide scroll bar
-    # options.add_argument('blink-settings=imagesEnabled=false')     # Do not load images, increase speed
     drive = webdriver.Chrome(executable_path="Chromedriver.exe", options=options)
-    # drive.set_window_size(1514, 974)  # customize window
-    # drive.set_window_size(1920, 1080)  # customize window
-    # drive.set_window_size(3000, 2000)  # customize window
     return drive
 
 
@@ -93,13 +86,6 @@ def element(chrome, url, user, password, url_oa, oa_user, oa_password, title, te
         drive.find_element_by_name('password').send_keys(password)
         drive.find_element_by_xpath('//*[@id="login-view"]/form/div[3]/button').click()  # login
         drive.switch_to.window(drive.window_handles[0])  # Crawl the current page element
-        # drive.find_element_by_xpath(
-        #     "/html/body/grafana-app/div/div/div/react-container/div/div[1]/div[5]/gf-time-picker/div/button[1]").click()  # find previous week
-        # # drive.find_element_by_xpath(
-        # #     '/html/body/grafana-app/div/div/div/react-container/div/div[1]/div[5]/gf-time-picker/div[2]/div[1]/div[2]/ul[3]/li[3]').click()  # determine this week
-        # drive.find_element_by_xpath('/html/body/grafana-app/div/div/div/react-container/div/div[1]/div[5]/gf-time-picker/div[2]/div[1]/div[2]/ul[2]/li[4]').click()     # determine previous week
-        # button = drive.find_element_by_xpath(
-        #     '/html/body/grafana-app/div/div/div/react-container/div/div[1]/div[5]/gf-time-picker/div/button[1]/span[1]').text  # Crawl button clock
         button = drive.find_element_by_xpath(
             '/html/body/grafana-app/div/div/div/react-container/div/div[1]/div[5]/div/div[1]/div/div/div/button/div/span/span').text  # Crawl button clock
 
@@ -110,7 +96,6 @@ def element(chrome, url, user, password, url_oa, oa_user, oa_password, title, te
         drive.find_element_by_xpath('//*[@id="panel-84"]/div/div/div/plugin-component/panel-plugin-natel-discrete-panel/grafana-panel/div/div[1]/panel-header/span/span[3]/ul/li[1]').click()
         if not os.path.exists(path):
             os.makedirs(path)
-        # os.chdir(path)
         time.sleep(3)
         drive.save_screenshot('%s\\MQ_Status_%s.png' % (path, tt))   # MQ Status
         drive.find_element_by_xpath('/html/body/grafana-app/div/div/div/react-container/div/div[1]/div[1]/button').click()  # back
@@ -125,10 +110,6 @@ def element(chrome, url, user, password, url_oa, oa_user, oa_password, title, te
 
         element2 = drive.find_element_by_xpath('//*[@id="panel-52"]')
         ActionChains(drive).move_to_element(element2).perform()     # move to disk grafana panel-plugin-briangann-datatable-panel
-        # drive.find_element_by_xpath('//*[@id="panel-50"]/div/div/div/plugin-component/panel-plugin-briangann-datatable-panel/grafana-panel/div/div[1]/panel-header/span/span[2]').click()
-        # drive.find_element_by_xpath('//*[@id="panel-50"]/div/div/div/plugin-component/panel-plugin-briangann-datatable-panel/grafana-panel/div/div[1]/panel-header/span/span[2]').click()
-        # drive.find_element_by_xpath('//*[@id="panel-52"]/div/div/div/plugin-component/panel-plugin-yesoreyeram-boomtable-panel/grafana-panel/div/div[1]/panel-header/span/span[2]').click()
-        # drive.find_element_by_xpath('//*[@id="panel-52"]/div/div/div/plugin-component/panel-plugin-yesoreyeram-boomtable-panel/grafana-panel/div/div[1]/panel-header/span/span[2]').click()     # second click
         time.sleep(1)
         drive.save_screenshot('%s\\Disk_%s.png' % (path, tt))        # MQ Disk
 
@@ -150,7 +131,6 @@ def element(chrome, url, user, password, url_oa, oa_user, oa_password, title, te
         time.sleep(3)
         drive.save_screenshot('%s\\Network_%s.png' % (path, tt))    # MQ Networ
         log().info('View current directory：' + os.getcwd())
-        # list_dir = os.listdir(os.getcwd())
         list_dir = os.listdir(path)
         image = list()
         for name in list_dir:
@@ -244,8 +224,6 @@ def oa_window(chrome, url, user, password, title, test, filename):
         drive.find_element_by_xpath('//*[@id="li_Team"]/a').click()
         xpath_double_click(drive, drive.find_element_by_xpath('//*[@id="TeamDataBody"]/option[8]')) # customize choose group
         drive.switch_to.default_content()                                                  # Jump back to the outermost page
-        # drive.execute_script("arguments[0].setAttribute('style',arguments[1]);", element, "")
-        # ActionChains(drive).move_to_element(element).click(element).perform()
         determine = drive.find_element_by_css_selector("[class='layui-layer-btn0 margin_r_10 common_button common_button_emphasize  ']")
         drive.execute_script("$(arguments[0]).click()", determine)                         # determine class=space
         drive.switch_to.frame('zwIframe')                                                  # switch to Superior frame id
@@ -288,14 +266,6 @@ def clean_screen():
     global timer2
     timer2 = threading.Timer(cleanTime, clean_screen)
     timer2.start()
-
-
-# #  pythonic timer
-# class RepeatingTimer(Timer):
-#     def run(self):
-#         while not self.finished.is_set():
-#             self.function(*self.args, **self.kwargs)
-#             self.finished.wait(self.interval)
 
 
 def check_thread():
@@ -366,10 +336,6 @@ def main():
         i.join()
     thread1.cancel()
     log().info('Kill thread1')
-
-    # # Test---
-    # element(chrome, url_mq, user, password, url_oa, oa_user, oa_password, title, test, filename, path, usual)
-    # oa_window(chrome, url_oa, oa_user, oa_password, title, test, filename)
 
 
 if __name__ == '__main__':
