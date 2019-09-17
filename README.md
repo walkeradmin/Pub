@@ -21,7 +21,7 @@ README
 |`System environment`|***windows server 2016/2008(recommend 2016)***|
 |`SDK version`|___python3.6↑___|  
 |`Installation module`|___cx_Oracle、pymysql、win32、ctypes、pythoncom、logformat、requests、schedule、openpyxl、selenium、Pilow、pyinstaller___|       
-|`Install`|___Step1. pyinstaller py files___|  
+|`Install`|___Step1. Pyinstaller py files___|  
 | |___Step2. Put the configuration file(gywl.bak gywl.dat gywl.dir DevopsConf.ini) in the dist folder___|     
 | |___Step3. Start the exe application in the dist directory___|  
  
