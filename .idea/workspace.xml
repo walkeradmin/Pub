@@ -2,9 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="08980bf8-b570-4e3a-ba8e-233837640c00" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/bash.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tem/template.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train/HB客商分布.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train/Titanic.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train/gender_submission.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train/ml.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train/plotlyT.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train/survived.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train/test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train/train.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train/train1.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/Pub.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Pub.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dispic/Grafana1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/autoThread.spec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/Basic.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/autoThread.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/inspectionthread.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/logformat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/inspectionthread.spec" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,7 +38,7 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="530">
+              <first_editor relative-caret-position="443">
                 <caret line="108" column="83" selection-start-line="108" selection-start-column="83" selection-end-line="108" selection-end-column="83" />
               </first_editor>
               <second_editor />
@@ -89,7 +106,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -107,6 +123,7 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -299,6 +316,7 @@
       <workItem from="1568249024216" duration="7560000" />
       <workItem from="1568532864474" duration="682000" />
       <workItem from="1568594705375" duration="2119000" />
+      <workItem from="1568681470310" duration="557000" />
     </task>
     <task id="LOCAL-00031" summary="update">
       <created>1565058770235</created>
@@ -647,12 +665,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="114499000" />
+    <option name="totallyTimeSpent" value="115056000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="-6" width="1513" height="973" extended-state="7" />
+    <frame x="-6" y="-6" width="1513" height="973" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13608247" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12714776" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -844,7 +863,7 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="530">
+          <first_editor relative-caret-position="443">
             <caret line="108" column="83" selection-start-line="108" selection-start-column="83" selection-end-line="108" selection-end-column="83" />
           </first_editor>
           <second_editor />
