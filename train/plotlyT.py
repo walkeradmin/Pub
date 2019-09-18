@@ -97,7 +97,7 @@ of.plot(data, filename='survived.html')     # py.plot会生成一个离线的htm
 #                marker=dict(colors=colors, line=dict(color='#000000', width=2))
 #                )
 # data = [trace]
-# # of.plot(data, filename='HB客商分布.html')
+# # of.plot(data, filename='hb_customer_code.html')
 # py.iplot({"data": data, "layout": go.Layout(title='HB-Attribute distribution')}, filename='HBks', auto_open=True)
 # stop_time = datetime.datetime.now()
 # print('Stop time：', stop_time)
