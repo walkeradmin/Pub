@@ -776,9 +776,9 @@ class Oracle:
 
 class Comp(object):
     def __init__(self, tor, message):
-        self._comp_id = "wwca9e177a69dcdecc"
-        self._secret = "x8G9ve4HZr3EDUjz8NfX5xZUCsDpwuo3E_KV_MDz27g"
-        self._agent_id = 1000003
+        self._comp_id = ""
+        self._secret = ""
+        self._agent_id = 
         self._token = 'https://qyapi.weixin.qq.com/cgi-bin/gettoken?corpid={}&corpsecret={}'.format(self._comp_id,
                                                                                                     self._secret)
         self._tor = tor
