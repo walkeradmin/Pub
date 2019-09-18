@@ -71,7 +71,6 @@ class ORDER:
                 '| ORDER CLASS | TIMER FUNCTION | Message：'
                 'Time to stop pushing, the next query will start at 08:00 tomorrow morning |')
 
-
     def start_time(self):
         global clock
         week = time.strftime("%A")
