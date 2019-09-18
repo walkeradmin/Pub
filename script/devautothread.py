@@ -1059,6 +1059,35 @@ class Mysql:
             return sql_rows
 
 
+def del_link():
+    li_folder = eval(deploy().get('folder', 'name'))
+    file_limit = eval(deploy().get('file', 'limit'))
+    current_path = os.getcwd()
+    try:
+        for folder in li_folder:
+            path = current_path + "\\formatLogs\\{}".format(folder)
+            li_file = os.listdir(path)
+            count_file = len(li_file)
+            if count_file > file_limit:
+                for i in range(count_file - file_limit):
+                    os.unlink(li_file[i])
+                    log().info(
+                        '| DEL LINK FUNCTION | Message：Current folder：{}，Delete file：{} |'.format(path, li_file[i]))
+            else:
+                log().info(
+                    '| DEL LINK FUNCTION | Message：'
+                    'Current folder：{}，The numbers of file is less than {}，Do not delete file |'.format(
+                        path, file_limit))
+            li_file_new = os.listdir(path)
+            count_file_new = len(li_file_new)
+            log().info('| DEL LINK FUNCTION | Message：'
+                       'Current folder：{}，The Numbers of file is {}，File {} |'.format(path, count_file_new,
+                                                                                      li_file_new))
+    except Exception as e:
+        error().error(str(e))
+        error().error(traceback.format_exc())
+
+
 def log():
     lg = logformat.Logger(logger=py_name + '[debug]',
                           filename='access',
@@ -1108,6 +1137,7 @@ def main():
     schedule.every(alarm_time).minutes.do(alarm_q.query_alarm)
     schedule.every(clean_time).hours.do(clean_screen)
     schedule.every(check_time).minutes.do(check_th.check_thread)
+    schedule.every(2).weeks.do(del_link)
     while True:
         schedule.run_pending()
         time.sleep(1)
