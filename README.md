@@ -99,7 +99,7 @@ README
 **注意事项1：若对源码进行修改，修改后用pyinstaller工具打包py文件。**  
 **注意事项2：所有配置文件的修改，请提前做好备份，以免配置错误导致程序报错。**   
 **注意事项3：gywl.bak、gywl.dat、gywl.dir二进制文件，在数据连接信息不发生改变无需修改，若需要修改请使用shelve重新生成文件即可。**   
-
+**注意事项4：若程序出现异常会通过微信公众号进行告警，请及时检查error日志排查问题。**   
 
 ## Display  
 |·|AUTOTHREAD|DISPLAY|
@@ -117,6 +117,7 @@ README
 |11|`Conf3`|![](https://github.com/walkeradmin/Pub/blob/master/Dispic/DevopConf3.png)  
 |12|`Conf4`|![](https://github.com/walkeradmin/Pub/blob/master/Dispic/DevopConf4.png)  
 |13|`Conf5`|![](https://github.com/walkeradmin/Pub/blob/master/Dispic/DevopConf5.png)  
+|14|`Mon`|![](https://github.com/walkeradmin/Pub/blob/master/Dispic/monitoring.png)  
 *********
 |·|INSPECTION|DISPLAY|
 |---|---|----
