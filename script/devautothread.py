@@ -778,7 +778,7 @@ class Comp(object):
     def __init__(self, tor, message):
         self._comp_id = ""
         self._secret = ""
-        self._agent_id = 
+        self._agent_id = ""
         self._token = 'https://qyapi.weixin.qq.com/cgi-bin/gettoken?corpid={}&corpsecret={}'.format(self._comp_id,
                                                                                                     self._secret)
         self._tor = tor
@@ -868,6 +868,9 @@ class ALARM:
     def alarm_send(self, result, group_name):
         handle = win32gui.FindWindow(None, group_name)
         if result == self._res:
+            w.OpenClipboard()
+            w.EmptyClipboard()
+            w.CloseClipboard()
             win32api.keybd_event(0x91, 0, 0, 0)  # 0x91 --> win key
             win32api.keybd_event(0x2C, 0, 0, 0)  # 0x2C --> PRINT SCREEN key
             win32api.keybd_event(0x91, 0, win32con.KEYEVENTF_KEYUP, 0)
