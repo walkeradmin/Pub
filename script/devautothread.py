@@ -28,7 +28,10 @@ import re
 import schedule
 from selenium import webdriver
 from selenium.webdriver import ActionChains
+from selenium.webdriver.chrome.options import Options
 import pymysql
+from io import BytesIO
+from PIL import Image
 
 
 def remove_bom(config_path):  # BOM字节
@@ -863,38 +866,45 @@ class ALARM:
         self._mq_elt = '//*[@id="panel-38"]'
         self._gra = 'Grafana'
         self._res = 'pic'
+        self._string = '@'
+        self._chrome = 'Chromedriver.exe'
         self._alarm_sql = 'SELECT * FROM zabbix.mq_fe_receive_view'
 
     def alarm_send(self, result, group_name):
         handle = win32gui.FindWindow(None, group_name)
-        if result == self._res:
+        if type(result) == bytes:
             w.OpenClipboard()
             w.EmptyClipboard()
+            w.SetClipboardData(win32con.CF_DIB, result)
             w.CloseClipboard()
-            win32api.keybd_event(0x91, 0, 0, 0)  # 0x91 --> win key
-            win32api.keybd_event(0x2C, 0, 0, 0)  # 0x2C --> PRINT SCREEN key
-            win32api.keybd_event(0x91, 0, win32con.KEYEVENTF_KEYUP, 0)
-            win32api.keybd_event(0x2C, 0, win32con.KEYEVENTF_KEYUP, 0)
             time.sleep(1)
             win32gui.SendMessage(handle, 770, 0, 0)
             win32gui.SendMessage(handle, win32con.WM_KEYDOWN, win32con.VK_RETURN, 0)
-        elif result != self._res:
+        elif type(result) == str:
             w.OpenClipboard()
             w.EmptyClipboard()
             w.SetClipboardData(win32con.CF_UNICODETEXT, str(result))
             w.CloseClipboard()
             time.sleep(1)
             win32gui.SendMessage(handle, 770, 0, 0)
-            if result.startswith('@'):
+            if result.startswith(self._string):
                 time.sleep(1)
                 win32gui.SendMessage(handle, win32con.WM_KEYDOWN, win32con.VK_RETURN, 0)
             else:
                 win32gui.SendMessage(handle, win32con.WM_KEYDOWN, win32con.VK_RETURN, 0)
 
+    def no_browser(self):
+        options = Options()
+        options.add_argument('--headless')                               # No visual page available
+        options.add_argument('--disable-gpu')                            # Avoid bugs
+        options.add_argument('--log-level=3')                            # log level
+        drive = webdriver.Chrome(executable_path=self._chrome, options=options)
+        drive.set_window_size(1920, 1080)
+        return drive
+
     def element(self, url, user_mq, password_mq, group):
         try:
-            drive = webdriver.Chrome(".\\chromedriver.exe")  # browser
-            drive.maximize_window()  # my window size: {'width': 1514, 'height': 974}!!!
+            drive = self.no_browser()
             drive.get(url)
             drive.implicitly_wait(10)
             drive.find_element_by_name(self._username).send_keys(user_mq)
@@ -903,8 +913,16 @@ class ALARM:
             drive.switch_to.window(drive.window_handles[0])  # Crawl the current page element
             element1 = drive.find_element_by_xpath(self._mq_elt)
             ActionChains(drive).move_to_element(element1).perform()
-            time.sleep(3)
-            self.alarm_send(self._res, group)
+            time.sleep(4)
+            clo = time.strftime("%Y-%m-%d_%H-%M-%S")
+            filename = ".\\formatLogs\\errorQueuePic\\mq_error_queue_{}.jpg".format(clo)
+            drive.get_screenshot_as_file(filename)
+            img = Image.open(filename)  # Image.open可以打开网络图片与本地图片。
+            output = BytesIO()  # BytesIO实现了在内存中读写bytes
+            img.convert("RGB").save(output, "BMP")  # 以RGB模式保存图像
+            data = output.getvalue()[14:]
+            output.close()
+            self.alarm_send(data, group)
             log().info('| ALARM CLASS | ELEMENT FUNCTION | Message：Screenshot task completed |')
             drive.quit()
         except Exception as e:
