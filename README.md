@@ -20,10 +20,12 @@ README
 |----|-----|
 |`System environment`|***windows server 2016/2008(recommend 2016)***|
 |`SDK version`|___python3.6↑___|  
-|`Installation module`|___cx_Oracle、pymysql、win32、ctypes、pythoncom、logformat、requests、schedule、openpyxl、selenium、Pilow、pyinstaller___|       
+|`Installation module`|___cx_Oracle、pymysql、win32、logformat、requests、schedule、openpyxl、selenium、Pillow、pyinstaller___|       
 |`Install`|___Step1. Pyinstaller py files___|  
 | |___Step2. Put the configuration file(gywl.bak、gywl.dat、gywl.dir、DevopsConf.ini、chromedriver.exe) in the dist folder___|     
-| |___Step3. Start the exe application in the dist directory___|  
+| |___Step3. Put the oracle client（instantclient_11_2） into the python directory___|   
+| |___Step4. Setting environment variables___|      
+| |___Step5. Start the exe application in the dist directory___|    
  
 ## Instructions
 |SCRIPT|HISTORIC VER|
