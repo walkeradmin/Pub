@@ -43,7 +43,7 @@ README
 | |___Solve：Concurrency problem(mutex、join)___|
 | |___5、09-05  Add openpyxl module___|
 | |___6、09-06  Modify send file function(mutex clipboard)___
-| |___7、09-12  Modify single thread___  
+| |___7、09-12  Modify single thread___   
 | |___8、09-13  Add prtSc___  
 | | |
 | | |
