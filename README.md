@@ -25,7 +25,7 @@ README
 | |___Step2. Put the configuration file(gywl.bak、gywl.dat、gywl.dir、DevopsConf.ini、chromedriver.exe) in the dist folder___|     
 | |___Step3. Put the oracle client（instantclient_11_2） into the python directory___|   
 | |___Step4. Setting environment variables___|      
-| |___Step5. Start the exe application in the dist directory___|    
+| |___Step5. Start the exe application in the dist directory___|     
  
 ## Instructions
 |SCRIPT|HISTORIC VER|
