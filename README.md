@@ -24,7 +24,7 @@ README
 |`Install`|___Step1. Pyinstaller py files___|  
 | |___Step2. Put the configuration file(gywl.bak、gywl.dat、gywl.dir、DevopsConf.ini、chromedriver.exe) in the dist folder___|     
 | |___Step3. Put the oracle client（instantclient_11_2） into the python directory___|   
-| |___Step4. Setting environment variables___|      
+| |___Step4. Setting environment variables(.\\instantclient_11_2、NLS_LANG：SIMPLIFIED CHINESE_CHINA.ZHS16GBK)___|      
 | |___Step5. Start the exe application in the dist directory___|     
  
 ## Instructions
