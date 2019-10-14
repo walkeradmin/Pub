@@ -1091,7 +1091,7 @@ def del_link():
             count_file = len(li_file)
             if count_file > file_limit:
                 for i in range(count_file - file_limit):
-                    os.unlink(li_file[i])
+                    os.unlink(path + '\\' + li_file[i])
                     log().info(
                         '| DEL LINK FUNCTION | Message：Current folder：{}，Delete file：{} |'.format(path, li_file[i]))
             else:
