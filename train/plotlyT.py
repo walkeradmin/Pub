@@ -2,7 +2,7 @@
 # import cx_Oracle
 #
 #
-# conn = cx_Oracle.connect("save_omd/omd_save_20170727@10.32.9.14/save")
+# conn = cx_Oracle.connect("")
 # cursor = conn.cursor()
 # sql = 'select * from order_statistics_xj_view'
 # cursor.execute(sql)
