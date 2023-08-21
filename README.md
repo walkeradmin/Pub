@@ -4,7 +4,6 @@ README
 
 |Author|Walker|
 |---|---
-|QQ|402264457
 
 
 ## Description
